@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_disk_full">저장 공간이 가득 찼어요. 공간을 확보한 뒤 다시 시도해 주세요.</string>
+    <string name="error_request_timeout">요청 시간이 초과됐어요. 연결을 확인하고 다시 시도해 주세요.</string>
+    <string name="error_no_internet">인터넷에 연결되어 있지 않아요.</string>
+    <string name="error_too_many_requests">요청이 너무 많아요. 잠시 후 다시 시도해 주세요.</string>
+    <string name="error_payload_too_large">보내려는 데이터가 너무 커요.</string>
+    <string name="error_server_error">서버에 문제가 발생했어요.</string>
+    <string name="error_serialization">서버 응답을 읽지 못했어요.</string>
+    <string name="error_unknown">알 수 없는 오류가 발생했어요.</string>
+</resources>

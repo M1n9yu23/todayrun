@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_disk_full">Storage is full. Free up some space and try again.</string>
+    <string name="error_request_timeout">The request timed out. Check your connection and try again.</string>
+    <string name="error_no_internet">No internet connection.</string>
+    <string name="error_too_many_requests">Too many requests. Please wait a moment.</string>
+    <string name="error_payload_too_large">The data was too large to send.</string>
+    <string name="error_server_error">Something went wrong on the server.</string>
+    <string name="error_serialization">Couldn\'t read the server\'s response.</string>
+    <string name="error_unknown">Something went wrong.</string>
+</resources>

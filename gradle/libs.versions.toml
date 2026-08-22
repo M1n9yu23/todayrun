@@ -50,6 +50,10 @@ androidx-paging-common = { module = "androidx.paging:paging-common", version.ref
 
 coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
 
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
+
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activityCompose" }
+
 [bundles]
 compose = [
     "androidx-compose-ui",
