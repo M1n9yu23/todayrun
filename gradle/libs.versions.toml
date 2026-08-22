@@ -8,6 +8,8 @@ lifecycleRuntimeKtx = "2.11.0"
 activityCompose = "1.13.0"
 kotlin = "2.4.10"
 composeBom = "2026.08.00"
+koin = "4.2.2"
+coroutines = "1.11.0"
 
 projectApplicationId = "com.gyugle.gyurun"
 projectVersionName = "1.0.0"
@@ -37,6 +39,11 @@ android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", ver
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 compose-compiler-gradlePlugin = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
 
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
+koin-core = { module = "io.insert-koin:koin-core" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+
 [bundles]
 compose = [
     "androidx-compose-ui",
@@ -48,7 +55,10 @@ compose = [
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
 gyurun-android-application = { id = "gyurun.android.application", version = "unspecified" }
 gyurun-android-application-compose = { id = "gyurun.android.application.compose", version = "unspecified" }
 gyurun-android-library = { id = "gyurun.android.library", version = "unspecified" }
 gyurun-android-library-compose = { id = "gyurun.android.library.compose", version = "unspecified" }
+gyurun-jvm-library = { id = "gyurun.jvm.library", version = "unspecified" }

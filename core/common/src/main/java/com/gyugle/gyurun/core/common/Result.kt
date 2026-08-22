@@ -1,0 +1,31 @@
+package com.gyugle.gyurun.core.common
+
+sealed interface Result<out D, out E : Error> {
+    data class Success<out D>(
+        val data: D
+    ) : Result<D, Nothing>
+
+    data class Error<out E : com.gyugle.gyurun.core.common.Error>(
+        val error: E
+    ) : Result<Nothing, E>
+}
+
+inline fun <T, E : Error, R> Result<T, E>.map(transform: (T) -> R): Result<R, E> =
+    when (this) {
+        is Result.Error -> Result.Error(error)
+        is Result.Success -> Result.Success(transform(data))
+    }
+
+inline fun <T, E : Error> Result<T, E>.onSuccess(action: (T) -> Unit): Result<T, E> =
+    apply {
+        if (this is Result.Success) action(data)
+    }
+
+inline fun <T, E : Error> Result<T, E>.onError(action: (E) -> Unit): Result<T, E> =
+    apply {
+        if (this is Result.Error) action(error)
+    }
+
+fun <T, E : Error> Result<T, E>.asEmptyResult(): EmptyResult<E> = map { }
+
+typealias EmptyResult<E> = Result<Unit, E>

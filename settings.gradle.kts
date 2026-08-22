@@ -25,4 +25,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "GyuRun"
 include(":app")
- 
+include(":core:common")

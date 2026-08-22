@@ -28,5 +28,9 @@ gradlePlugin {
             id = "gyurun.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
+        register("jvmLibrary") {
+            id = "gyurun.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }
