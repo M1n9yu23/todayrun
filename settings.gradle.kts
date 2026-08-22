@@ -27,3 +27,4 @@ rootProject.name = "GyuRun"
 include(":app")
 include(":core:common")
 include(":core:domain")
+include(":core:presentation:designsystem")

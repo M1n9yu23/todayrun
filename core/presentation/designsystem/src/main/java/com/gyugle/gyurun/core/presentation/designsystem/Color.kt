@@ -1,0 +1,40 @@
+package com.gyugle.gyurun.core.presentation.designsystem
+
+import androidx.compose.ui.graphics.Color
+
+val GyuRunViolet = Color(0xFF7C5CFF)
+val GyuRunVioletDark = Color(0xFF6544E6)
+val GyuRunVioletLight = Color(0xFF9B85FF)
+val GyuRunVioletDim = Color(0xFF8E70FF)
+val GyuRunOrange = Color(0xFFFF7A45)
+val GyuRunOrangeDark = Color(0xFFE0632C)
+val GyuRunTeal = Color(0xFF4EC8C0)
+val GyuRunTealDark = Color(0xFF1FA89E)
+
+val GyuRunBlack = Color(0xFF0E0D12)
+val GyuRunDarkSurface = Color(0xFF1B1922)
+val GyuRunDarkSurfaceVariant = Color(0xFF2A2833)
+val GyuRunWhite = Color(0xFFF5F4F8)
+val GyuRunGray = Color(0xFFA6A2B5)
+val GyuRunDarkOutline = Color(0xFF48454F)
+val GyuRunVioletContainer = Color(0xFF2E2450)
+val GyuRunOnVioletContainer = Color(0xFFDDD1FF)
+val GyuRunOrangeContainer = Color(0xFF3A2116)
+val GyuRunOnOrangeContainer = Color(0xFFFFD8C7)
+
+val GyuRunLightBackground = Color(0xFFFBFAFF)
+val GyuRunLightSurface = Color(0xFFFFFFFF)
+val GyuRunLightSurfaceVariant = Color(0xFFECE9F2)
+val GyuRunInk = Color(0xFF1A1725)
+val GyuRunLightGray = Color(0xFF615D6B)
+val GyuRunLightOutline = Color(0xFFCAC5D2)
+val GyuRunLightVioletContainer = Color(0xFFE7DEFF)
+val GyuRunOnLightVioletContainer = Color(0xFF22105C)
+val GyuRunLightOrangeContainer = Color(0xFFFFDBCC)
+val GyuRunOnLightOrangeContainer = Color(0xFF351000)
+
+val GyuRunError = Color(0xFFFF5449)
+val GyuRunErrorDark = Color(0xFFBA1A1A)
+val GyuRunDarkErrorContainer = Color(0xFF3A1513)
+val GyuRunLightErrorContainer = Color(0xFFFFDAD6)
+val GyuRunOnLightErrorContainer = Color(0xFF410002)
