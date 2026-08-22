@@ -10,6 +10,7 @@ kotlin = "2.4.10"
 composeBom = "2026.08.00"
 koin = "4.2.2"
 coroutines = "1.11.0"
+paging = "3.5.0"
 
 projectApplicationId = "com.gyugle.gyurun"
 projectVersionName = "1.0.0"
@@ -43,6 +44,8 @@ koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core" }
 
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+
+androidx-paging-common = { module = "androidx.paging:paging-common", version.ref = "paging" }
 
 [bundles]
 compose = [
