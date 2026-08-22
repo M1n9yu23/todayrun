@@ -1,0 +1,5 @@
+<resources>
+    <string name="content_description_go_back">뒤로 가기</string>
+    <string name="state_error_title">문제가 발생했어요</string>
+    <string name="state_retry">다시 시도</string>
+</resources>

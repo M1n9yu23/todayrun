@@ -1,0 +1,5 @@
+<resources>
+    <string name="content_description_go_back">Go back</string>
+    <string name="state_error_title">Something went wrong</string>
+    <string name="state_retry">Retry</string>
+</resources>
