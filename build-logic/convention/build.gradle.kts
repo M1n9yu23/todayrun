@@ -8,6 +8,7 @@ dependencies {
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
     compileOnly(libs.compose.compiler.gradlePlugin)
+    compileOnly(libs.room.gradlePlugin)
 }
 
 gradlePlugin {
@@ -31,6 +32,10 @@ gradlePlugin {
         register("jvmLibrary") {
             id = "gyurun.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
+        }
+        register("androidRoom") {
+            id = "gyurun.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
         }
     }
 }
