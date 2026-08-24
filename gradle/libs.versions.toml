@@ -58,6 +58,8 @@ koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core" }
 koin-android = { module = "io.insert-koin:koin-android" }
 koin-androidx-workmanager = { module = "io.insert-koin:koin-androidx-workmanager" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
+koin-compose-navigation3 = { module = "io.insert-koin:koin-compose-navigation3" }
 
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }
@@ -73,6 +75,7 @@ androidx-work-runtime = { module = "androidx.work:work-runtime", version.ref = "
 androidx-navigation3-runtime = { module = "androidx.navigation3:navigation3-runtime", version.ref = "nav3" }
 androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplashscreen" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
 
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
@@ -115,3 +118,4 @@ gyurun-android-library = { id = "gyurun.android.library", version = "unspecified
 gyurun-android-library-compose = { id = "gyurun.android.library.compose", version = "unspecified" }
 gyurun-jvm-library = { id = "gyurun.jvm.library", version = "unspecified" }
 gyurun-android-room = { id = "gyurun.android.room", version = "unspecified" }
+gyurun-android-feature = { id = "gyurun.android.feature", version = "unspecified" }

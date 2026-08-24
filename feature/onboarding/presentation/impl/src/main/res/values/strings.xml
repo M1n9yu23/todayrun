@@ -1,0 +1,16 @@
+<resources>
+    <string name="onboarding_page_track_title">Every run, remembered</string>
+    <string name="onboarding_page_track_description">TodayRun follows your run from the first step to the last — distance, time, and pace, all captured for you.</string>
+    <string name="onboarding_page_map_title">Your route on the map</string>
+    <string name="onboarding_page_map_description">Watch your path draw itself across the map in real time, and relive exactly where you ran afterwards.</string>
+    <string name="onboarding_page_stats_title">Watch yourself grow</string>
+    <string name="onboarding_page_stats_description">Splits, weekly totals, and trends turn every run into progress you can actually see.</string>
+    <string name="onboarding_page_indicator">Page %1$d of %2$d</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get started</string>
+    <string name="permission_location_title">Location permission needed</string>
+    <string name="permission_location_rationale">TodayRun traces your run on the map using your location. Allow location access to start tracking your runs.</string>
+    <string name="permission_location_settings">Location permission is turned off. Open Settings and allow location for TodayRun to track your runs.</string>
+    <string name="permission_try_again">Try again</string>
+    <string name="permission_open_settings">Open Settings</string>
+</resources>

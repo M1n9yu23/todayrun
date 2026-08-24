@@ -1,0 +1,16 @@
+<resources>
+    <string name="onboarding_page_track_title">모든 러닝을 기억한다</string>
+    <string name="onboarding_page_track_description">"오늘도런"은 첫 걸음부터 마지막 걸음까지 당신의 러닝을 따라갑니다 — 거리도, 시간도, 페이스도 빠짐없이.</string>
+    <string name="onboarding_page_map_title">지도 위에 그려지는 경로</string>
+    <string name="onboarding_page_map_description">달리는 길이 실시간으로 지도 위에 그려지고, 나중에 내가 뛴 그 길을 그대로 다시 봅니다.</string>
+    <string name="onboarding_page_stats_title">자라나는 나를 지켜본다</string>
+    <string name="onboarding_page_stats_description">스플릿, 주간 합계, 추세가 매 러닝을 눈에 보이는 성장으로 바꿉니다.</string>
+    <string name="onboarding_page_indicator">%2$d페이지 중 %1$d번째 페이지</string>
+    <string name="onboarding_next">다음</string>
+    <string name="onboarding_get_started">시작하기</string>
+    <string name="permission_location_title">위치 권한이 필요해요</string>
+    <string name="permission_location_rationale">"오늘도런"은 위치를 이용해 지도 위에 러닝 경로를 그립니다. 러닝을 기록하려면 위치 접근을 허용해 주세요.</string>
+    <string name="permission_location_settings">위치 권한이 꺼져 있습니다. 설정에서 "오늘도런"의 위치를 허용해 주세요.</string>
+    <string name="permission_try_again">다시 시도</string>
+    <string name="permission_open_settings">설정 열기</string>
+</resources>

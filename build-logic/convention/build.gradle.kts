@@ -37,5 +37,9 @@ gradlePlugin {
             id = "gyurun.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
+        register("androidFeature") {
+            id = "gyurun.android.feature"
+            implementationClass = "AndroidFeatureConventionPlugin"
+        }
     }
 }
