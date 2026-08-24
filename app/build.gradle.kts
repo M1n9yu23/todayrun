@@ -14,18 +14,33 @@ dependencies {
     implementation(project(":core:datastore"))
     implementation(project(":core:data"))
     implementation(project(":core:navigation"))
+    implementation(project(":core:presentation:designsystem"))
+    implementation(project(":core:presentation:ui"))
 
     implementation(project(":feature:onboarding:presentation:impl"))
+    implementation(project(":feature:onboarding:presentation:api"))
+
+    implementation(project(":feature:overview:presentation:api"))
 
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)
-
     implementation(libs.koin.androidx.workmanager)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.compose.navigation3)
+
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.work.runtime)
+    implementation(libs.androidx.navigation3.ui)
+    implementation(libs.androidx.lifecycle.viewmodel.navigation3)
 
     implementation(libs.timber)
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.splashscreen)
+
+    implementation(libs.kotlinx.coroutines.core)
 }
