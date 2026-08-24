@@ -21,6 +21,7 @@ ktor = "3.5.2"
 timber = "5.0.1"
 datastore = "1.2.1"
 workManager = "2.11.2"
+nav3 = "1.1.5"
 
 projectApplicationId = "com.gyugle.gyurun"
 projectVersionName = "1.0.0"
@@ -67,6 +68,7 @@ androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lif
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activityCompose" }
 androidx-datastore = { group = "androidx.datastore", name = "datastore", version.ref = "datastore" }
 androidx-work-runtime = { module = "androidx.work:work-runtime", version.ref = "workManager" }
+androidx-navigation3-runtime = { module = "androidx.navigation3:navigation3-runtime", version.ref = "nav3" }
 
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
