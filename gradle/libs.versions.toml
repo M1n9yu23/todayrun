@@ -20,6 +20,7 @@ ktlint = "1.8.0"
 ktor = "3.5.2"
 timber = "5.0.1"
 datastore = "1.2.1"
+workManager = "2.11.2"
 
 projectApplicationId = "com.gyugle.gyurun"
 projectVersionName = "1.0.0"
@@ -53,6 +54,7 @@ room-gradlePlugin = { module = "androidx.room:room-gradle-plugin", version.ref =
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core" }
 koin-android = { module = "io.insert-koin:koin-android" }
+koin-androidx-workmanager = { module = "io.insert-koin:koin-androidx-workmanager" }
 
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }
@@ -64,6 +66,7 @@ coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" 
 androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activityCompose" }
 androidx-datastore = { group = "androidx.datastore", name = "datastore", version.ref = "datastore" }
+androidx-work-runtime = { module = "androidx.work:work-runtime", version.ref = "workManager" }
 
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }

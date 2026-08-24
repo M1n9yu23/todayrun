@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        buildConfigField("String", "BASE_URL", "")
+        buildConfigField("String", "BASE_URL", "null")
     }
 }
 
