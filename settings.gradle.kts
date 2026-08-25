@@ -26,6 +26,7 @@ dependencyResolutionManagement {
 rootProject.name = "GyuRun"
 include(":app")
 include(":core:common")
+include(":core:connectivity:domain")
 include(":core:domain")
 include(":core:database")
 include(":core:datastore")
