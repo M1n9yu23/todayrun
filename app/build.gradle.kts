@@ -16,6 +16,8 @@ dependencies {
     implementation(project(":core:navigation"))
     implementation(project(":core:presentation:designsystem"))
     implementation(project(":core:presentation:ui"))
+    implementation(project(":run:location"))
+    implementation(project(":run:sensor"))
 
     implementation(project(":feature:onboarding:presentation:impl"))
     implementation(project(":feature:onboarding:presentation:api"))
