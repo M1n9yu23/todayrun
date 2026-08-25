@@ -1,0 +1,5 @@
+<resources>
+    <string name="active_run_notification_channel_name">Run tracking</string>
+    <string name="active_run_notification_title">Tracking your run</string>
+    <string name="active_run_notification_text">Recording your route even while the screen is off.</string>
+</resources>
