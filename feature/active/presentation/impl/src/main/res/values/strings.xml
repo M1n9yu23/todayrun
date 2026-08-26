@@ -1,0 +1,26 @@
+<resources>
+    <string name="active_run_start">Start</string>
+    <string name="active_run_pause">Pause</string>
+    <string name="active_run_resume">Resume</string>
+    <string name="active_run_finish">Finish</string>
+    <string name="active_run_exit">Exit</string>
+    <string name="active_run_saving">Finishing up…</string>
+    <string name="active_run_stat_distance">Distance</string>
+    <string name="active_run_stat_pace">Pace</string>
+    <string name="active_run_stat_steps">Steps</string>
+    <string name="active_run_stat_heart_rate">Heart rate</string>
+    <string name="active_run_elapsed_time">Elapsed time %1$s</string>
+    <string name="active_run_saved">Run saved</string>
+    <string name="active_run_retry">Retry</string>
+    <string name="active_run_location_permission_title">Location needed</string>
+    <string name="active_run_location_rationale">Today Run records your route and pace from your location. Allow location access to start this run.</string>
+    <string name="active_run_location_settings">Location access is turned off. Turn it on in Settings to start a run.</string>
+    <string name="active_run_enable">Enable</string>
+    <string name="active_run_open_settings">Open settings</string>
+    <string name="active_run_steps_permission_rationale">Grant physical activity access to count your steps while you run.</string>
+    <string name="active_run_signal_lost">Weak GPS signal — your route may not be recorded right now.</string>
+    <string name="active_run_resume_title">You have a run in progress</string>
+    <string name="active_run_resume_description">Resume your unsaved run, or discard it?</string>
+    <string name="active_run_resume_confirm">Resume run</string>
+    <string name="active_run_discard">Discard</string>
+</resources>

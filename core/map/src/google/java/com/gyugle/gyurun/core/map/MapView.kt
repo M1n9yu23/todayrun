@@ -41,7 +41,7 @@ private val LocationMarkerCoreSize = 16.dp
 private val MarkerPreviewPadding = 24.dp
 
 @Composable
-fun PaceMapView(
+fun MapView(
     state: RunMapState,
     modifier: Modifier = Modifier,
 ) {
