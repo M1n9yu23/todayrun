@@ -1,0 +1,19 @@
+<resources>
+    <string name="overview_title">히스토리</string>
+    <string name="overview_start_run">러닝 시작</string>
+    <string name="overview_stats">통계</string>
+    <string name="overview_settings">설정</string>
+    <string name="overview_empty_title">아직 러닝이 없어요</string>
+    <string name="overview_empty_message">완주한 러닝이 여기에 쌓입니다. 신발 끈을 매고 첫 러닝을 시작해 보세요.</string>
+    <string name="overview_error">러닝을 불러오지 못했어요.</string>
+    <string name="overview_route_map">러닝 경로</string>
+    <string name="overview_stat_distance">거리</string>
+    <string name="overview_stat_duration">시간</string>
+    <string name="overview_stat_pace">페이스</string>
+    <string name="overview_delete_run">러닝 삭제</string>
+    <string name="overview_run_deleted">러닝을 삭제했어요</string>
+    <string name="overview_undo">실행 취소</string>
+    <string name="overview_load_more_error">더 불러오지 못했어요.</string>
+    <string name="overview_retry">다시 시도</string>
+    <string name="overview_scroll_to_top">맨 위로</string>
+</resources>

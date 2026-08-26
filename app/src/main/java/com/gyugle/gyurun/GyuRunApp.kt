@@ -7,7 +7,9 @@ import com.gyugle.gyurun.core.database.di.databaseModule
 import com.gyugle.gyurun.core.datastore.di.dataStoreModule
 import com.gyugle.gyurun.core.network.di.networkModule
 import com.gyugle.gyurun.di.appModule
+import com.gyugle.gyurun.feature.active.presentation.impl.di.activePresentationModule
 import com.gyugle.gyurun.feature.onboarding.presentation.impl.di.onboardingPresentationModule
+import com.gyugle.gyurun.feature.overview.presentation.impl.di.overviewPresentationModule
 import com.gyugle.gyurun.run.location.di.locationModule
 import com.gyugle.gyurun.run.sensor.di.sensorModule
 import org.koin.android.ext.koin.androidContext
@@ -36,6 +38,8 @@ class GyuRunApp :
                 locationModule,
                 sensorModule,
                 onboardingPresentationModule,
+                overviewPresentationModule,
+                activePresentationModule,
                 appModule
             )
         }

@@ -37,6 +37,9 @@ dependencies {
     implementation(project(":feature:onboarding:presentation:api"))
 
     implementation(project(":feature:overview:presentation:api"))
+    implementation(project(":feature:overview:presentation:impl"))
+
+    implementation(project(":feature:active:presentation:impl"))
 
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)

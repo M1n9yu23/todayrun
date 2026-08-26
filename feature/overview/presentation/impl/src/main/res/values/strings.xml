@@ -1,0 +1,19 @@
+<resources>
+    <string name="overview_title">History</string>
+    <string name="overview_start_run">Start run</string>
+    <string name="overview_stats">Statistics</string>
+    <string name="overview_settings">Settings</string>
+    <string name="overview_empty_title">No runs yet</string>
+    <string name="overview_empty_message">Your finished runs will show up here. Lace up and start your first one.</string>
+    <string name="overview_error">We couldn\'t load your runs.</string>
+    <string name="overview_route_map">Route map</string>
+    <string name="overview_stat_distance">Distance</string>
+    <string name="overview_stat_duration">Duration</string>
+    <string name="overview_stat_pace">Pace</string>
+    <string name="overview_delete_run">Delete run</string>
+    <string name="overview_run_deleted">Run deleted</string>
+    <string name="overview_undo">Undo</string>
+    <string name="overview_load_more_error">Couldn\'t load more runs.</string>
+    <string name="overview_retry">Retry</string>
+    <string name="overview_scroll_to_top">Scroll to top</string>
+</resources>
