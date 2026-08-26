@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="map_kakao_key_missing">A Kakao Maps key is needed to draw the map. Everything else keeps working without it.</string>
+</resources>

@@ -4,6 +4,20 @@ plugins {
 
 android {
     namespace = "com.gyugle.gyurun"
+
+    flavorDimensions += "mapProvider"
+    productFlavors {
+        create("google") {
+            dimension = "mapProvider"
+        }
+        create("kakao") {
+            dimension = "mapProvider"
+            ndk {
+                // 카카오맵 요구사양....
+                abiFilters += listOf("arm64-v8a", "armeabi-v7a")
+            }
+        }
+    }
 }
 
 dependencies {

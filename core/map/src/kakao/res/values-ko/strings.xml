@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="map_kakao_key_missing">지도를 그리려면 카카오 지도 키가 필요해요. 키가 없어도 나머지는 그대로 돌아갑니다.</string>
+</resources>

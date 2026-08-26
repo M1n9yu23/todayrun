@@ -25,6 +25,9 @@ nav3 = "1.1.5"
 appcompat = "1.7.1"
 coreSplashscreen = "1.2.0"
 gmsLocation = "21.4.0"
+mapsCompose = "8.4.0"
+playServicesMaps = "20.0.0"
+kakaoMap = "2.14.1"
 
 projectApplicationId = "com.gyugle.gyurun"
 projectVersionName = "1.0.0"
@@ -92,6 +95,10 @@ ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
 google-android-gms-play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "gmsLocation" }
+google-maps-android-compose = { module = "com.google.maps.android:maps-compose", version.ref = "mapsCompose" }
+google-android-gms-play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
+
+kakao-maps-android = { module = "com.kakao.maps.open:android", version.ref = "kakaoMap" }
 
 [bundles]
 compose = [
