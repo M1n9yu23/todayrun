@@ -1,0 +1,31 @@
+<resources>
+    <string name="settings_title">설정</string>
+    <string name="settings_section_units">거리 단위</string>
+    <string name="settings_units_km">킬로미터</string>
+    <string name="settings_units_mi">마일</string>
+    <string name="settings_section_theme">테마</string>
+    <string name="settings_theme_system">시스템</string>
+    <string name="settings_theme_light">밝게</string>
+    <string name="settings_theme_dark">어둡게</string>
+    <string name="settings_section_language">언어</string>
+    <string name="settings_language_system">시스템</string>
+    <string name="settings_section_map">지도</string>
+    <string name="settings_map_provider">지도 공급자</string>
+    <string name="settings_map_provider_caption">앱을 빌드할 때 정해집니다. 여기서는 바꿀 수 없어요.</string>
+    <string name="settings_map_provider_google">Google 지도</string>
+    <string name="settings_map_provider_kakao">카카오맵</string>
+    <string name="settings_section_about">정보</string>
+    <string name="settings_about">앱 정보</string>
+    <string name="settings_about_caption">버전, 오픈소스 라이선스, 약관</string>
+    <string name="about_title">정보</string>
+    <string name="about_app_name">오늘도런</string>
+    <string name="about_version_label">버전 %1$s</string>
+    <string name="about_section_legal">법적 고지</string>
+    <string name="about_map_notice">지도 SDK 고지</string>
+    <string name="about_open_source_licenses">오픈소스 라이선스</string>
+    <string name="about_section_policies">약관</string>
+    <string name="about_privacy_policy">개인정보처리방침</string>
+    <string name="about_terms">이용약관</string>
+    <string name="about_open_link_failed">링크를 열 브라우저를 찾지 못했어요.</string>
+    <string name="about_open_link_description">%1$s, 브라우저에서 열기</string>
+</resources>

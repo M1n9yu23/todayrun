@@ -11,6 +11,7 @@ import com.gyugle.gyurun.feature.active.presentation.impl.di.activePresentationM
 import com.gyugle.gyurun.feature.details.presentation.impl.di.detailsPresentationModule
 import com.gyugle.gyurun.feature.onboarding.presentation.impl.di.onboardingPresentationModule
 import com.gyugle.gyurun.feature.overview.presentation.impl.di.overviewPresentationModule
+import com.gyugle.gyurun.feature.settings.presentation.impl.di.settingsPresentationModule
 import com.gyugle.gyurun.feature.stats.presentation.impl.di.statsPresentationModule
 import com.gyugle.gyurun.run.location.di.locationModule
 import com.gyugle.gyurun.run.sensor.di.sensorModule
@@ -44,6 +45,7 @@ class GyuRunApp :
                 activePresentationModule,
                 detailsPresentationModule,
                 statsPresentationModule,
+                settingsPresentationModule,
                 appModule
             )
         }

@@ -29,6 +29,7 @@ mapsCompose = "8.4.0"
 playServicesMaps = "20.0.0"
 kakaoMap = "2.14.1"
 material3Adaptive = "1.2.0"
+browser = "1.10.0"
 
 projectApplicationId = "com.gyugle.gyurun"
 projectVersionName = "1.0.0"
@@ -85,6 +86,7 @@ androidx-navigation3-ui = { module = "androidx.navigation3:navigation3-ui", vers
 androidx-lifecycle-viewmodel-navigation3 = { module = "androidx.lifecycle:lifecycle-viewmodel-navigation3", version.ref = "lifecycleRuntimeKtx" }
 androidx-compose-material3-adaptive = { module = "androidx.compose.material3.adaptive:adaptive", version.ref = "material3Adaptive" }
 androidx-paging-compose = { module = "androidx.paging:paging-compose", version.ref = "paging" }
+androidx-browser = { module = "androidx.browser:browser", version.ref = "browser" }
 
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
