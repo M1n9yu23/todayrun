@@ -11,6 +11,7 @@ import com.gyugle.gyurun.feature.active.presentation.impl.di.activePresentationM
 import com.gyugle.gyurun.feature.details.presentation.impl.di.detailsPresentationModule
 import com.gyugle.gyurun.feature.onboarding.presentation.impl.di.onboardingPresentationModule
 import com.gyugle.gyurun.feature.overview.presentation.impl.di.overviewPresentationModule
+import com.gyugle.gyurun.feature.stats.presentation.impl.di.statsPresentationModule
 import com.gyugle.gyurun.run.location.di.locationModule
 import com.gyugle.gyurun.run.sensor.di.sensorModule
 import org.koin.android.ext.koin.androidContext
@@ -42,6 +43,7 @@ class GyuRunApp :
                 overviewPresentationModule,
                 activePresentationModule,
                 detailsPresentationModule,
+                statsPresentationModule,
                 appModule
             )
         }

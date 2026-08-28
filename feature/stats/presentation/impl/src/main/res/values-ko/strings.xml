@@ -1,0 +1,12 @@
+<resources>
+    <string name="stats_title">통계</string>
+    <string name="stats_empty_title">아직 통계가 없어요</string>
+    <string name="stats_empty_message">첫 러닝을 마치면 이곳에 합계가 쌓입니다.</string>
+    <string name="stats_total_distance">총 거리</string>
+    <string name="stats_total_runs">총 러닝</string>
+    <string name="stats_total_duration">총 시간</string>
+    <string name="stats_avg_speed">평균 속도</string>
+    <string name="stats_total_elevation">누적 상승고도</string>
+    <string name="stats_weekly_distance">주간 거리</string>
+    <string name="stats_chart_content_description">최근 %1$d주 주간 거리 그래프. 최고 %2$s, 최근 주 %3$s.</string>
+</resources>

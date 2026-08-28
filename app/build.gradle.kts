@@ -41,6 +41,7 @@ dependencies {
 
     implementation(project(":feature:active:presentation:impl"))
     implementation(project(":feature:details:presentation:impl"))
+    implementation(project(":feature:stats:presentation:impl"))
 
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)

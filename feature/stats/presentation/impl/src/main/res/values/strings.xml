@@ -1,0 +1,12 @@
+<resources>
+    <string name="stats_title">Statistics</string>
+    <string name="stats_empty_title">No stats yet</string>
+    <string name="stats_empty_message">Finish your first run and your totals will show up here.</string>
+    <string name="stats_total_distance">Total distance</string>
+    <string name="stats_total_runs">Total runs</string>
+    <string name="stats_total_duration">Total time</string>
+    <string name="stats_avg_speed">Average speed</string>
+    <string name="stats_total_elevation">Elevation gain</string>
+    <string name="stats_weekly_distance">Weekly distance</string>
+    <string name="stats_chart_content_description">Weekly distance chart for the last %1$d weeks. Peak %2$s, most recent week %3$s.</string>
+</resources>
