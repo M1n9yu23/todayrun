@@ -40,6 +40,7 @@ dependencies {
     implementation(project(":feature:overview:presentation:impl"))
 
     implementation(project(":feature:active:presentation:impl"))
+    implementation(project(":feature:details:presentation:impl"))
 
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)

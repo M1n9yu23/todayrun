@@ -1,0 +1,25 @@
+<resources>
+    <string name="detail_title">Run details</string>
+    <string name="detail_route_map">Route map</string>
+    <string name="detail_not_found_title">Run not found</string>
+    <string name="detail_not_found_message">This run may have been deleted.</string>
+    <string name="detail_stat_distance">Distance</string>
+    <string name="detail_stat_duration">Time</string>
+    <string name="detail_stat_avg_pace">Avg pace</string>
+    <string name="detail_stat_max_speed">Top speed</string>
+    <string name="detail_stat_elevation">Elevation</string>
+    <string name="detail_stat_steps">Steps</string>
+    <string name="detail_weather_title">Weather</string>
+    <string name="detail_weather_feels_like">Feels like</string>
+    <string name="detail_weather_humidity">Humidity</string>
+    <string name="detail_weather_wind">Wind</string>
+    <string name="detail_weather_clear">Clear</string>
+    <string name="detail_weather_cloudy">Cloudy</string>
+    <string name="detail_weather_fog">Fog</string>
+    <string name="detail_weather_rain">Rain</string>
+    <string name="detail_weather_snow">Snow</string>
+    <string name="detail_weather_thunderstorm">Thunderstorm</string>
+    <string name="detail_weather_unknown">Unknown</string>
+    <string name="detail_splits_title">Splits</string>
+    <string name="detail_split_number">%1$d</string>
+</resources>

@@ -8,6 +8,7 @@ import com.gyugle.gyurun.core.datastore.di.dataStoreModule
 import com.gyugle.gyurun.core.network.di.networkModule
 import com.gyugle.gyurun.di.appModule
 import com.gyugle.gyurun.feature.active.presentation.impl.di.activePresentationModule
+import com.gyugle.gyurun.feature.details.presentation.impl.di.detailsPresentationModule
 import com.gyugle.gyurun.feature.onboarding.presentation.impl.di.onboardingPresentationModule
 import com.gyugle.gyurun.feature.overview.presentation.impl.di.overviewPresentationModule
 import com.gyugle.gyurun.run.location.di.locationModule
@@ -40,6 +41,7 @@ class GyuRunApp :
                 onboardingPresentationModule,
                 overviewPresentationModule,
                 activePresentationModule,
+                detailsPresentationModule,
                 appModule
             )
         }
