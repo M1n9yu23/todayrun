@@ -1,6 +1,7 @@
 package com.gyugle.gyurun
 
 import android.app.Application
+import com.gyugle.gyurun.connectivity.data.di.connectivityModule
 import com.gyugle.gyurun.core.common.di.coreCommonModule
 import com.gyugle.gyurun.core.data.di.dataModule
 import com.gyugle.gyurun.core.database.di.databaseModule
@@ -40,6 +41,7 @@ class GyuRunApp :
                 dataModule,
                 locationModule,
                 sensorModule,
+                connectivityModule,
                 onboardingPresentationModule,
                 overviewPresentationModule,
                 activePresentationModule,

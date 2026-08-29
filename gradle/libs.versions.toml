@@ -30,6 +30,16 @@ playServicesMaps = "20.0.0"
 kakaoMap = "2.14.1"
 material3Adaptive = "1.2.0"
 browser = "1.10.0"
+playServicesWearable = "20.0.1"
+wearCompose = "1.6.2"
+healthServices = "1.0.0"
+wearTiles = "1.6.2"
+wearProtolayout = "1.4.2"
+concurrentFutures = "1.2.0"
+wearOngoing = "1.1.0"
+glance = "1.1.1"
+benchmark = "1.5.0-alpha07"
+profileinstaller = "1.4.1"
 
 projectApplicationId = "com.gyugle.gyurun"
 projectVersionName = "1.0.0"
@@ -69,6 +79,7 @@ koin-compose-navigation3 = { module = "io.insert-koin:koin-compose-navigation3" 
 
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "coroutines" }
 
 androidx-paging-common = { module = "androidx.paging:paging-common", version.ref = "paging" }
 
@@ -105,6 +116,24 @@ google-android-gms-play-services-maps = { module = "com.google.android.gms:play-
 
 kakao-maps-android = { module = "com.kakao.maps.open:android", version.ref = "kakaoMap" }
 
+google-android-gms-play-services-wearable = { module = "com.google.android.gms:play-services-wearable", version.ref = "playServicesWearable" }
+androidx-wear-compose-material3 = { group = "androidx.wear.compose", name = "compose-material3", version.ref = "wearCompose" }
+androidx-wear-compose-foundation = { group = "androidx.wear.compose", name = "compose-foundation", version.ref = "wearCompose" }
+androidx-wear-compose-ui-tooling = { group = "androidx.wear.compose", name = "compose-ui-tooling", version.ref = "wearCompose" }
+androidx-health-services-client = { module = "androidx.health:health-services-client", version.ref = "healthServices" }
+androidx-wear-tiles = { module = "androidx.wear.tiles:tiles", version.ref = "wearTiles" }
+androidx-wear-protolayout = { module = "androidx.wear.protolayout:protolayout", version.ref = "wearProtolayout" }
+androidx-wear-protolayout-material3 = { module = "androidx.wear.protolayout:protolayout-material3", version.ref = "wearProtolayout" }
+androidx-concurrent-futures = { module = "androidx.concurrent:concurrent-futures", version.ref = "concurrentFutures" }
+androidx-wear-ongoing = { module = "androidx.wear:wear-ongoing", version.ref = "wearOngoing" }
+
+androidx-glance-appwidget = { module = "androidx.glance:glance-appwidget", version.ref = "glance" }
+androidx-glance-material3 = { module = "androidx.glance:glance-material3", version.ref = "glance" }
+androidx-glance-preview = { module = "androidx.glance:glance-preview", version.ref = "glance" }
+androidx-glance-appwidget-preview = { module = "androidx.glance:glance-appwidget-preview", version.ref = "glance" }
+androidx-benchmark-macro-junit4 = { module = "androidx.benchmark:benchmark-macro-junit4", version.ref = "benchmark" }
+androidx-profileinstaller = { module = "androidx.profileinstaller:profileinstaller", version.ref = "profileinstaller" }
+
 [bundles]
 compose = [
     "androidx-compose-ui",
@@ -124,6 +153,7 @@ ktor = [
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+androidx-baselineprofile = { id = "androidx.baselineprofile", version.ref = "benchmark" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
@@ -131,6 +161,7 @@ room = { id = "androidx.room", version.ref = "room" }
 
 gyurun-android-application = { id = "gyurun.android.application", version = "unspecified" }
 gyurun-android-application-compose = { id = "gyurun.android.application.compose", version = "unspecified" }
+gyurun-android-application-wear-compose = { id = "gyurun.android.application.wear.compose", version = "unspecified" }
 gyurun-android-library = { id = "gyurun.android.library", version = "unspecified" }
 gyurun-android-library-compose = { id = "gyurun.android.library.compose", version = "unspecified" }
 gyurun-jvm-library = { id = "gyurun.jvm.library", version = "unspecified" }

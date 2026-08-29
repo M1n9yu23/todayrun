@@ -28,6 +28,7 @@ dependencies {
     implementation(project(":core:datastore"))
     implementation(project(":core:data"))
     implementation(project(":core:navigation"))
+    implementation(project(":core:connectivity:data"))
     implementation(project(":core:presentation:designsystem"))
     implementation(project(":core:presentation:ui"))
     implementation(project(":run:location"))
