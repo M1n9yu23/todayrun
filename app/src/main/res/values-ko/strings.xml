@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">오늘도런</string>
+    <string name="weekly_summary_notification_channel_name">주간 요약</string>
+    <string name="weekly_summary_notification_title">이번 주 러닝</string>
+    <string name="weekly_summary_notification_text">이번 주 러닝 %1$d회 · %2$s. 계속 달려 볼까요?</string>
+    <string name="weekly_summary_notification_empty">이번 주엔 아직 러닝이 없어요. 가볍게 한 번 어때요?</string>
+    <string name="widget_label">오늘도런 주간 기록</string>
+    <string name="widget_description">이번 주 거리와 최근 러닝을 한눈에.</string>
+    <string name="widget_week_title">이번 주</string>
+    <plurals name="widget_runs_count">
+        <item quantity="other">러닝 %1$d회</item>
+    </plurals>
+    <string name="widget_no_run_this_week">이번 주엔 아직 러닝이 없어요</string>
+    <string name="widget_recent_label">최근 러닝</string>
+    <string name="widget_empty_title">첫 러닝을 시작해 보세요</string>
+    <string name="widget_empty_subtitle">탭하면 오늘도런 열려요.</string>
 </resources>

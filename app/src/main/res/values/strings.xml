@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">TodayRun</string>
+    <string name="weekly_summary_notification_channel_name">Weekly summary</string>
+    <string name="weekly_summary_notification_title">Your week in running</string>
+    <string name="weekly_summary_notification_text">Runs this week: %1$d · %2$s. Keep it up!</string>
+    <string name="weekly_summary_notification_empty">No runs yet this week. How about a quick one?</string>
+    <string name="widget_label">TodayRun weekly stats</string>
+    <string name="widget_description">This week\'s distance and your latest run.</string>
+    <string name="widget_week_title">This week</string>
+    <plurals name="widget_runs_count">
+        <item quantity="one">%1$d run</item>
+        <item quantity="other">%1$d runs</item>
+    </plurals>
+    <string name="widget_no_run_this_week">No runs yet this week</string>
+    <string name="widget_recent_label">Latest run</string>
+    <string name="widget_empty_title">Start your first run</string>
+    <string name="widget_empty_subtitle">Tap to open TodayRun.</string>
 </resources>

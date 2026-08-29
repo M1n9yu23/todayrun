@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
             viewModel.state.isCheckingOnboarding
         }
         super.onCreate(savedInstanceState)
+        (application as GyuRunApp)
+            .useLanguageForWidget(resources.configuration.locales.toLanguageTags())
         enableEdgeToEdge()
         setContent {
             val state = viewModel.state

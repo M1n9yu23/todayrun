@@ -18,6 +18,17 @@ android {
             }
         }
     }
+
+    buildTypes {
+        debug {
+            isPseudoLocalesEnabled = true
+        }
+        release {
+            optimization {
+                enable = true
+            }
+        }
+    }
 }
 
 dependencies {
@@ -58,6 +69,10 @@ dependencies {
     implementation(libs.androidx.work.runtime)
     implementation(libs.androidx.navigation3.ui)
     implementation(libs.androidx.lifecycle.viewmodel.navigation3)
+    implementation(libs.androidx.glance.appwidget)
+    implementation(libs.androidx.glance.material3)
+    implementation(libs.androidx.glance.preview)
+    debugImplementation(libs.androidx.glance.appwidget.preview)
 
     implementation(libs.timber)
 
