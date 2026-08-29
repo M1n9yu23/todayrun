@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wear_metric_heart_rate">심박수</string>
+    <string name="wear_metric_distance">거리</string>
+    <string name="wear_heart_rate_unsupported">미지원</string>
+    <string name="wear_heart_rate_acquiring">측정 중</string>
+    <string name="wear_heart_rate_needs_permission">허용 필요</string>
+    <string name="wear_heart_rate_in_settings">설정 필요</string>
+    <string name="wear_allow_heart_rate">심박 허용</string>
+    <string name="wear_recording_needs_permission">기록 권한이 필요해요</string>
+    <string name="wear_recording_in_settings">설정에서 기록 권한을 켜 주세요</string>
+    <string name="wear_allow_recording">기록 허용</string>
+    <string name="wear_control_start">시작</string>
+    <string name="wear_control_pause">일시정지</string>
+    <string name="wear_control_finish">종료</string>
+    <string name="wear_open_phone_run">폰에서 러닝 화면을 여세요</string>
+    <string name="wear_connect_phone">폰과 연결해 주세요</string>
+    <string name="wear_exercise_error">운동을 시작할 수 없어요</string>
+    <string name="wear_exercise_pause_error">운동을 멈추지 못했어요</string>
+    <string name="wear_exercise_stop_error">운동을 끝내지 못했어요</string>
+    <string name="wear_exercise_service_error">기록을 이어 갈 수 없어요</string>
+</resources>

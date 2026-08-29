@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wear_metric_heart_rate">Heart rate</string>
+    <string name="wear_metric_distance">Distance</string>
+    <string name="wear_heart_rate_unsupported">Unsupported</string>
+    <string name="wear_heart_rate_acquiring">Reading</string>
+    <string name="wear_heart_rate_needs_permission">Needs access</string>
+    <string name="wear_heart_rate_in_settings">Open settings</string>
+    <string name="wear_allow_heart_rate">Allow heart rate</string>
+    <string name="wear_recording_needs_permission">Recording access is needed</string>
+    <string name="wear_recording_in_settings">Turn on recording access in settings</string>
+    <string name="wear_allow_recording">Allow recording</string>
+    <string name="wear_control_start">Start</string>
+    <string name="wear_control_pause">Pause</string>
+    <string name="wear_control_finish">Finish</string>
+    <string name="wear_open_phone_run">Open the run screen on your phone</string>
+    <string name="wear_connect_phone">Connect your phone</string>
+    <string name="wear_exercise_error">Could not start the workout</string>
+    <string name="wear_exercise_pause_error">Could not pause the workout</string>
+    <string name="wear_exercise_stop_error">Could not finish the workout</string>
+    <string name="wear_exercise_service_error">Could not keep recording</string>
+</resources>

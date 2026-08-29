@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wear_app_name">오늘도런</string>
+    <string name="wear_tile_description">러닝 화면으로 바로 가는 타일</string>
+    <string name="wear_tile_status_ready">달릴 준비 완료</string>
+    <string name="wear_tile_status_running">러닝 중</string>
+    <string name="wear_tile_start">오늘도런 열기</string>
+    <string name="wear_tile_open">러닝 열기</string>
+    <string name="wear_exercise_notification_channel_name">러닝</string>
+    <string name="wear_exercise_notification_title">러닝 기록 중</string>
+    <string name="wear_exercise_notification_text">달리는 동안 손목에서 이어집니다</string>
+</resources>

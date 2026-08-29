@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wear_app_name">TodayRun</string>
+    <string name="wear_tile_description">A tile that takes you straight to your run</string>
+    <string name="wear_tile_status_ready">Ready to run</string>
+    <string name="wear_tile_status_running">Running</string>
+    <string name="wear_tile_start">Open TodayRun</string>
+    <string name="wear_tile_open">Open the run</string>
+    <string name="wear_exercise_notification_channel_name">Running</string>
+    <string name="wear_exercise_notification_title">Recording your run</string>
+    <string name="wear_exercise_notification_text">It keeps going on your wrist while you run</string>
+</resources>
