@@ -193,18 +193,30 @@ class TrackerViewModel(
         phoneConnector.messagingActions
             .onEach { action ->
                 when (action) {
-                    MessagingAction.Finish -> onAction(
-                        TrackerAction.OnFinishRunClick,
-                        triggeredOnPhone = true
-                    )
+                    MessagingAction.Finish -> {
+                        onAction(
+                            TrackerAction.OnFinishRunClick,
+                            triggeredOnPhone = true,
+                        )
+                    }
 
-                    MessagingAction.Pause -> if (state.isTrackable) state =
-                        state.copy(isRunActive = false)
+                    MessagingAction.Pause -> {
+                        if (state.isTrackable) {
+                            state =
+                                state.copy(isRunActive = false)
+                        }
+                    }
 
-                    MessagingAction.StartOrResume -> if (state.isTrackable) state =
-                        state.copy(isRunActive = true)
+                    MessagingAction.StartOrResume -> {
+                        if (state.isTrackable) {
+                            state =
+                                state.copy(isRunActive = true)
+                        }
+                    }
 
-                    else -> Unit
+                    else -> {
+                        Unit
+                    }
                 }
             }.launchIn(viewModelScope)
     }

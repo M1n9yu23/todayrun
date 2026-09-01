@@ -52,4 +52,4 @@ private fun NotificationPermissionEffect(store: NotificationPermissionStore) {
 
 private fun Context.hasNotificationPermission(): Boolean =
     ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) ==
-            PackageManager.PERMISSION_GRANTED
+        PackageManager.PERMISSION_GRANTED

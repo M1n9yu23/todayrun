@@ -34,26 +34,28 @@ fun GyuRunActionButton(
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
     leadingIcon: ImageVector? = null,
-    onClick: () -> Unit
+    onClick: () -> Unit,
 ) {
     Button(
         onClick = onClick,
         enabled = enabled && !isLoading,
-        colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.primary,
-            contentColor = MaterialTheme.colorScheme.onPrimary,
-            disabledContainerColor = MaterialTheme.colorScheme.surfaceVariant,
-            disabledContentColor = MaterialTheme.colorScheme.onSurfaceVariant
-        ),
+        colors =
+            ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.primary,
+                contentColor = MaterialTheme.colorScheme.onPrimary,
+                disabledContainerColor = MaterialTheme.colorScheme.surfaceVariant,
+                disabledContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
+            ),
         shape = CircleShape,
-        modifier = modifier
+        modifier = modifier,
     ) {
         Box(contentAlignment = Alignment.Center) {
             CircularProgressIndicator(
-                modifier = Modifier
-                    .size(MaterialTheme.spacing.large)
-                    .alpha(if (isLoading) 1f else 0f),
-                color = LocalContentColor.current
+                modifier =
+                    Modifier
+                        .size(MaterialTheme.spacing.large)
+                        .alpha(if (isLoading) 1f else 0f),
+                color = LocalContentColor.current,
             )
             Row(
                 modifier = Modifier.alpha(if (isLoading) 0f else 1f),
@@ -78,27 +80,29 @@ fun GyuRunOutlinedActionButton(
     isLoading: Boolean,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    onClick: () -> Unit
+    onClick: () -> Unit,
 ) {
     OutlinedButton(
         onClick = onClick,
         enabled = enabled && !isLoading,
-        colors = ButtonDefaults.outlinedButtonColors(
-            contentColor = MaterialTheme.colorScheme.onBackground
-        ),
+        colors =
+            ButtonDefaults.outlinedButtonColors(
+                contentColor = MaterialTheme.colorScheme.onBackground,
+            ),
         shape = CircleShape,
-        modifier = modifier
+        modifier = modifier,
     ) {
         Box(contentAlignment = Alignment.Center) {
             CircularProgressIndicator(
-                modifier = Modifier
-                    .size(MaterialTheme.spacing.large)
-                    .alpha(if (isLoading) 1f else 0f),
-                color = LocalContentColor.current
+                modifier =
+                    Modifier
+                        .size(MaterialTheme.spacing.large)
+                        .alpha(if (isLoading) 1f else 0f),
+                color = LocalContentColor.current,
             )
             Text(
                 text = text,
-                modifier = Modifier.alpha(if (isLoading) 0f else 1f)
+                modifier = Modifier.alpha(if (isLoading) 0f else 1f),
             )
         }
     }
@@ -109,17 +113,18 @@ fun GyuRunTextButton(
     text: String,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    onClick: () -> Unit
+    onClick: () -> Unit,
 ) {
     TextButton(
         onClick = onClick,
         enabled = enabled,
-        colors = ButtonDefaults.textButtonColors(
-            contentColor = MaterialTheme.colorScheme.primary,
-            disabledContentColor = MaterialTheme.colorScheme.onSurfaceVariant
-        ),
+        colors =
+            ButtonDefaults.textButtonColors(
+                contentColor = MaterialTheme.colorScheme.primary,
+                disabledContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
+            ),
         shape = CircleShape,
-        modifier = modifier
+        modifier = modifier,
     ) {
         Text(text = text)
     }

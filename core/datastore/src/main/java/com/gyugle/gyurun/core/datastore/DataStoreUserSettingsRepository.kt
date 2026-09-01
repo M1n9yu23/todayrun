@@ -27,22 +27,35 @@ internal class DataStoreUserSettingsRepository(
             }.map { it.toUserSettings() }
 
     override suspend fun setDistanceUnit(unit: DistanceUnit) {
-        dataStore.updateData { it.copy(distanceUnit = unit.name) }
+        update("distanceUnit") { it.copy(distanceUnit = unit.name) }
     }
 
     override suspend fun setThemeMode(themeMode: ThemeMode) {
-        dataStore.updateData { it.copy(themeMode = themeMode.name) }
+        update("themeMode") { it.copy(themeMode = themeMode.name) }
     }
 
     override suspend fun setHasCompletedOnboarding(hasCompleted: Boolean) {
-        dataStore.updateData { it.copy(hasCompletedOnboarding = hasCompleted) }
+        update("hasCompletedOnboarding") { it.copy(hasCompletedOnboarding = hasCompleted) }
     }
 
     override suspend fun setHasRequestedStepsPermission(hasRequested: Boolean) {
-        dataStore.updateData { it.copy(hasRequestedStepsPermission = hasRequested) }
+        update("hasRequestedStepsPermission") { it.copy(hasRequestedStepsPermission = hasRequested) }
     }
 
     override suspend fun setHasRequestedNotificationPermission(hasRequested: Boolean) {
-        dataStore.updateData { it.copy(hasRequestedNotificationPermission = hasRequested) }
+        update("hasRequestedNotificationPermission") {
+            it.copy(hasRequestedNotificationPermission = hasRequested)
+        }
+    }
+
+    private suspend fun update(
+        field: String,
+        transform: (UserPreferences) -> UserPreferences,
+    ) {
+        try {
+            dataStore.updateData(transform)
+        } catch (e: IOException) {
+            Timber.e(e, "user_prefs 에 %s 을(를) 쓰지 못했다", field)
+        }
     }
 }

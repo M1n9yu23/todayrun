@@ -51,7 +51,7 @@ class GyuRunWearApp :
                     ExerciseServiceCommand.START -> {
                         ContextCompat.startForegroundService(
                             this,
-                            ExerciseService.createStartIntent(this)
+                            ExerciseService.createStartIntent(this),
                         )
                     }
 

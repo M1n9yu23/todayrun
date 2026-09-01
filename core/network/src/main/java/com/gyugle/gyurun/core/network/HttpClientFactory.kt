@@ -29,6 +29,7 @@ class HttpClientFactory(
     private val isCleartextPermitted: (String) -> Boolean = { host ->
         NetworkSecurityPolicy.getInstance().isCleartextTrafficPermitted(host)
     },
+    private val logLevel: LogLevel = if (BuildConfig.DEBUG) LogLevel.ALL else LogLevel.NONE,
 ) {
     fun build(engine: HttpClientEngine): HttpClient =
         HttpClient(engine) {
@@ -53,7 +54,7 @@ class HttpClientFactory(
                             Timber.tag("Ktor").d(message)
                         }
                     }
-                level = LogLevel.ALL
+                level = logLevel
             }
         }
 }

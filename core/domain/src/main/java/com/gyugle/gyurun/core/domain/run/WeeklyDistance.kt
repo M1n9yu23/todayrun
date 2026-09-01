@@ -4,5 +4,5 @@ import java.time.LocalDate
 
 data class WeeklyDistance(
     val weekStart: LocalDate,
-    val distanceMeters: Int
+    val distanceMeters: Int,
 )

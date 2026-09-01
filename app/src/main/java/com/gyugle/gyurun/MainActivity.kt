@@ -48,12 +48,12 @@ class MainActivity : AppCompatActivity() {
                     if (!state.isCheckingOnboarding) {
                         GyuRunNavHost(
                             hasCompletedOnboarding = state.hasCompletedOnboarding,
-                            modifier = Modifier.fillMaxSize()
+                            modifier = Modifier.fillMaxSize(),
                         )
                         if (state.hasCompletedOnboarding) {
                             NotificationPermissionEffect(
                                 hasRequested = state.hasRequestedNotificationPermission,
-                                onRequested = viewModel::onNotificationPermissionRequested
+                                onRequested = viewModel::onNotificationPermissionRequested,
                             )
                         }
                     }
@@ -66,14 +66,13 @@ class MainActivity : AppCompatActivity() {
 @Composable
 private fun NotificationPermissionEffect(
     hasRequested: Boolean,
-    onRequested: () -> Unit
+    onRequested: () -> Unit,
 ) {
     val context = LocalContext.current
     val permissionLauncher =
         rememberLauncherForActivityResult(
-            contract = ActivityResultContracts.RequestPermission()
+            contract = ActivityResultContracts.RequestPermission(),
         ) {
-
         }
 
     LaunchedEffect(hasRequested) {

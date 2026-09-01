@@ -12,19 +12,19 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
 internal class SettingsViewModel(
-    private val userSettingsRepository: UserSettingsRepository
+    private val userSettingsRepository: UserSettingsRepository,
 ) : ViewModel() {
     val state: StateFlow<SettingsState> =
         userSettingsRepository.userSettings
             .map { settings ->
                 SettingsState(
                     distanceUnit = settings.distanceUnit,
-                    themeMode = settings.themeMode
+                    themeMode = settings.themeMode,
                 )
             }.stateIn(
                 scope = viewModelScope,
                 started = SharingStarted.WhileSubscribed(5_000),
-                initialValue = SettingsState()
+                initialValue = SettingsState(),
             )
 
     fun onSelectDistanceUnit(unit: DistanceUnit) {
@@ -42,5 +42,5 @@ internal class SettingsViewModel(
 
 internal data class SettingsState(
     val distanceUnit: DistanceUnit = DistanceUnit.KILOMETERS,
-    val themeMode: ThemeMode = ThemeMode.SYSTEM
+    val themeMode: ThemeMode = ThemeMode.SYSTEM,
 )

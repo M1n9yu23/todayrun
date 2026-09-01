@@ -74,8 +74,7 @@ internal class PhoneToWatchConnector(
             }.launchIn(applicationScope)
     }
 
-    override suspend fun sendActionToWatch(action: MessagingAction): EmptyResult<MessagingError> =
-        messagingClient.sendOrQueueAction(action)
+    override suspend fun sendActionToWatch(action: MessagingAction): EmptyResult<MessagingError> = messagingClient.sendOrQueueAction(action)
 
     override fun setIsTrackable(isTrackable: Boolean) {
         this.isTrackable.value = isTrackable

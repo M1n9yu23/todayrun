@@ -11,8 +11,7 @@ import kotlin.time.Duration
 fun formatDistance(
     distanceMeters: Int,
     unit: DistanceUnit,
-): String =
-    String.format(Locale.getDefault(), "%.2f %s", distanceMeters / unit.metersPerUnit, unit.symbol)
+): String = String.format(Locale.getDefault(), "%.2f %s", distanceMeters / unit.metersPerUnit, unit.symbol)
 
 fun formatDuration(duration: Duration): String =
     duration.toComponents { hours, minutes, seconds, _ ->
@@ -59,8 +58,7 @@ fun formatSpeed(
     return String.format(Locale.getDefault(), "%.1f %s", perHour, unit.speedLabel)
 }
 
-fun formatElevation(elevationMeters: Int): String =
-    String.format(Locale.getDefault(), "%d m", elevationMeters)
+fun formatElevation(elevationMeters: Int): String = String.format(Locale.getDefault(), "%d m", elevationMeters)
 
 fun formatSteps(steps: Int): String = String.format(Locale.getDefault(), "%,d", steps)
 
@@ -76,7 +74,6 @@ fun formatRunDate(
                 .withLocale(Locale.getDefault()),
         )
 
-fun formatTemperature(celsius: Double): String =
-    String.format(Locale.getDefault(), "%.0f°", celsius)
+fun formatTemperature(celsius: Double): String = String.format(Locale.getDefault(), "%.0f°", celsius)
 
 fun formatHumidity(percent: Int): String = String.format(Locale.getDefault(), "%d%%", percent)

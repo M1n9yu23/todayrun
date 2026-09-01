@@ -13,7 +13,7 @@ plugins {
 
 allprojects {
     apply(plugin = "com.diffplug.spotless")
-    configure<SpotlessExtension>() {
+    configure<SpotlessExtension> {
         kotlin {
             target("src/**/*.kt")
             ktlint(libs.versions.ktlint.get())

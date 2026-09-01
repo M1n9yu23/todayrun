@@ -16,6 +16,7 @@ import com.gyugle.gyurun.core.domain.run.repository.RunDraftRepository
 import com.gyugle.gyurun.core.domain.run.repository.RunRepository
 import com.gyugle.gyurun.core.domain.weather.repository.WeatherRepository
 import com.gyugle.gyurun.core.presentation.ui.toUiText
+import com.gyugle.gyurun.run.domain.ActiveRunServiceController
 import com.gyugle.gyurun.run.domain.LocationDataCalculator
 import com.gyugle.gyurun.run.domain.RunningTracker
 import com.gyugle.gyurun.run.domain.WatchConnector
@@ -37,6 +38,7 @@ internal class ActiveRunViewModel(
     private val watchConnector: WatchConnector,
     private val runDraftRepository: RunDraftRepository,
     private val userSettingsRepository: UserSettingsRepository,
+    private val activeRunServiceController: ActiveRunServiceController,
     private val savedStateHandle: SavedStateHandle,
 ) : ViewModel() {
     var state by mutableStateOf(ActiveRunState())
@@ -197,7 +199,7 @@ internal class ActiveRunViewModel(
 
         val runState = state
         val locations = runState.runData.locations
-        if (locations.isEmpty() || locations.first().size <= 1) {
+        if (locations.sumOf { it.size } <= 1) {
             viewModelScope.launch {
                 runningTracker.finishRun()
                 runningTracker.startObservingLocation()
@@ -269,6 +271,7 @@ internal class ActiveRunViewModel(
             runningTracker.setIsTracking(false)
         }
         runningTracker.stopObservingLocation()
+        activeRunServiceController.stop()
     }
 
     companion object {

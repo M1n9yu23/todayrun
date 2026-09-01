@@ -72,15 +72,9 @@ class ActiveRunService : Service() {
         stopSelf()
     }
 
-    private fun hasLocationPermission(): Boolean {
-        val fineGranted =
-            ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) ==
-                    PackageManager.PERMISSION_GRANTED
-        val coarseGranted =
-            ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) ==
-                    PackageManager.PERMISSION_GRANTED
-        return fineGranted || coarseGranted
-    }
+    private fun hasLocationPermission(): Boolean =
+        ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) ==
+            PackageManager.PERMISSION_GRANTED
 
     private fun createNotificationChannel() {
         val channel =

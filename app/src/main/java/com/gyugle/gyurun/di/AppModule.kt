@@ -19,7 +19,7 @@ val appModule =
                 context = androidApplication(),
                 params = params.get(),
                 runRepository = get(),
-                userSettingsRepository = get()
+                userSettingsRepository = get(),
             )
         }
     }

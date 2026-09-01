@@ -28,17 +28,17 @@ fun GyuRunIconButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    tint: Color = MaterialTheme.colorScheme.onSurfaceVariant
+    tint: Color = MaterialTheme.colorScheme.onSurfaceVariant,
 ) {
     IconButton(
         onClick = onClick,
         enabled = enabled,
-        modifier = modifier.size(MaterialTheme.spacing.huge)
+        modifier = modifier.size(MaterialTheme.spacing.huge),
     ) {
         Icon(
             imageVector = icon,
             contentDescription = contentDescription,
-            tint = tint
+            tint = tint,
         )
     }
 }
@@ -49,7 +49,7 @@ fun GyuRunFilledIconButton(
     contentDescription: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    enabled: Boolean = true
+    enabled: Boolean = true,
 ) {
     FilledTonalIconButton(
         onClick = onClick,
@@ -75,17 +75,17 @@ private fun GyuRunIconButtonPreview() {
         Surface(color = MaterialTheme.colorScheme.background) {
             Row(
                 modifier = Modifier.padding(MaterialTheme.spacing.medium),
-                horizontalArrangement = Arrangement.spacedBy(MaterialTheme.spacing.small)
+                horizontalArrangement = Arrangement.spacedBy(MaterialTheme.spacing.small),
             ) {
                 GyuRunIconButton(
                     icon = SettingsIcon,
                     contentDescription = "Open Settings",
-                    onClick = {}
+                    onClick = {},
                 )
                 GyuRunIconButton(
                     icon = ArrowUpIcon,
                     contentDescription = "Open in browser",
-                    onClick = {}
+                    onClick = {},
                 )
             }
         }

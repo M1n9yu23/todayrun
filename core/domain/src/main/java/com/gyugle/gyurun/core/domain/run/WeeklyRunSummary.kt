@@ -21,8 +21,7 @@ data class WeeklyRunSummary(
                 mostRecentRun = runs.maxByOrNull { it.dateTimeUtc },
             )
 
-        fun weekTotalsOnly(weekRuns: List<Run>): WeeklyRunSummary =
-            ofWeekRuns(weekRuns, mostRecentRun = null)
+        fun weekTotalsOnly(weekRuns: List<Run>): WeeklyRunSummary = ofWeekRuns(weekRuns, mostRecentRun = null)
 
         fun ofWeekRuns(
             weekRuns: List<Run>,

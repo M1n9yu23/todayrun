@@ -10,13 +10,7 @@ import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.core.content.ContextCompat
 
-fun Context.hasLocationPermission(): Boolean =
-    hasPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-
-fun Context.hasCoarseLocationPermission(): Boolean =
-    hasPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
-
-fun Context.canTrackLocation(): Boolean = hasLocationPermission() || hasCoarseLocationPermission()
+fun Context.hasLocationPermission(): Boolean = hasPermission(Manifest.permission.ACCESS_FINE_LOCATION)
 
 fun ComponentActivity.shouldShowLocationPermissionRationale(): Boolean =
     shouldShowRequestPermissionRationale(Manifest.permission.ACCESS_FINE_LOCATION)
@@ -35,8 +29,7 @@ fun ComponentActivity.shouldShowActivityRecognitionPermissionRationale(): Boolea
         false
     }
 
-fun Context.hasNotificationPermission(): Boolean =
-    hasPermission(Manifest.permission.POST_NOTIFICATIONS)
+fun Context.hasNotificationPermission(): Boolean = hasPermission(Manifest.permission.POST_NOTIFICATIONS)
 
 fun Context.openAppSettings() {
     val intent =

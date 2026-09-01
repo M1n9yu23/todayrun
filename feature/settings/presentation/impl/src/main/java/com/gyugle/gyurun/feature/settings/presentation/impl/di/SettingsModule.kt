@@ -22,13 +22,13 @@ val settingsPresentationModule =
             val navigator = get<Navigator>()
             SettingsScreenRoot(
                 onBackClick = { navigator.navigateBack() },
-                onOpenAbout = { navigator.navigateTo(AboutNavKey) }
+                onOpenAbout = { navigator.navigateTo(AboutNavKey) },
             )
         }
         navigation<AboutNavKey> {
             val navigator = get<Navigator>()
             AboutScreenRoot(
-                onBackClick = { navigator.navigateBack() }
+                onBackClick = { navigator.navigateBack() },
             )
         }
     }

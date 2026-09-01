@@ -10,8 +10,7 @@ internal val messagingJson =
         ignoreUnknownKeys = true
     }
 
-internal fun encodeMessagingAction(action: MessagingAction): String =
-    messagingJson.encodeToString(action.toMessagingActionDto())
+internal fun encodeMessagingAction(action: MessagingAction): String = messagingJson.encodeToString(action.toMessagingActionDto())
 
 internal fun decodeMessagingAction(json: String): MessagingAction? =
     try {

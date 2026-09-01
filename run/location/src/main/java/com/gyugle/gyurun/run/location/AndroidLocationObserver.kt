@@ -103,5 +103,4 @@ internal fun isRecentEnough(
     fixNanos: Long,
 ): Boolean = nowNanos - fixNanos <= MAX_LAST_LOCATION_AGE_NANOS
 
-private fun Location.isRecentEnough(): Boolean =
-    isRecentEnough(SystemClock.elapsedRealtimeNanos(), elapsedRealtimeNanos)
+private fun Location.isRecentEnough(): Boolean = isRecentEnough(SystemClock.elapsedRealtimeNanos(), elapsedRealtimeNanos)

@@ -9,9 +9,11 @@ import com.gyugle.gyurun.core.domain.run.RunId
 import com.gyugle.gyurun.core.domain.weather.Weather
 import com.gyugle.gyurun.core.domain.weather.WeatherType
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.SerializationException
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+import timber.log.Timber
 import java.time.Instant
 import java.time.ZoneId
 import java.util.UUID
@@ -23,16 +25,17 @@ internal fun RunEntity.toRun(): Run =
         duration = durationMillis.milliseconds,
         dateTimeUtc = Instant.parse(dateTimeUtc).atZone(ZoneId.of("UTC")),
         distanceMeters = distanceMeters,
-        location = Location(
-            lat = latitude,
-            long = longitude
-        ),
+        location =
+            Location(
+                lat = latitude,
+                long = longitude,
+            ),
         maxSpeedKmh = maxSpeedKmh,
         totalElevationMeters = totalElevationMeters,
         route = route.toRoute(),
         mapPicturePath = mapPicturePath,
         weather = toWeather(),
-        steps = steps
+        steps = steps,
     )
 
 private fun RunEntity.toWeather(): Weather? {
@@ -101,7 +104,13 @@ internal fun List<List<LocationTimestamp>>.toRouteJson(): String? {
 
 internal fun String?.toRoute(): List<List<LocationTimestamp>> {
     if (this == null) return emptyList()
-    val surrogate = routeJson.decodeFromString<List<List<RoutePointSurrogate>>>(this)
+    val surrogate =
+        try {
+            routeJson.decodeFromString<List<List<RoutePointSurrogate>>>(this)
+        } catch (e: SerializationException) {
+            Timber.e(e, "러닝 경로를 읽지 못했다 — 경로 없이 넘긴다")
+            return emptyList()
+        }
     return surrogate.map { segment ->
         segment.map { point ->
             LocationTimestamp(

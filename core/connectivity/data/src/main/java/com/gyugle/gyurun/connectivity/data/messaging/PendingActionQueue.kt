@@ -39,13 +39,13 @@ internal class PendingActionQueue(
             MessagingAction.ConnectionRequest,
             MessagingAction.Trackable,
             MessagingAction.Untrackable,
-                -> true
+            -> true
 
             is MessagingAction.HeartRateUpdate,
             is MessagingAction.StepCountUpdate,
             is MessagingAction.DistanceUpdate,
             is MessagingAction.TimeUpdate,
-                -> false
+            -> false
         }
 
     private data class QueuedAction(

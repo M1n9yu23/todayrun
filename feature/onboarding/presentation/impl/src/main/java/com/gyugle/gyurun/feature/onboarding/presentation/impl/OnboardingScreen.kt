@@ -64,7 +64,7 @@ import kotlin.math.absoluteValue
 private val locationPermissions =
     arrayOf(
         Manifest.permission.ACCESS_FINE_LOCATION,
-        Manifest.permission.ACCESS_COARSE_LOCATION
+        Manifest.permission.ACCESS_COARSE_LOCATION,
     )
 
 private data class OnboardingPage(
@@ -142,17 +142,17 @@ internal fun OnboardingScreen(
                 OnboardingPage(
                     runIcon,
                     R.string.onboarding_page_track_title,
-                    R.string.onboarding_page_track_description
+                    R.string.onboarding_page_track_description,
                 ),
                 OnboardingPage(
                     mapPinIcon,
                     R.string.onboarding_page_map_title,
-                    R.string.onboarding_page_map_description
+                    R.string.onboarding_page_map_description,
                 ),
                 OnboardingPage(
                     statsIcon,
                     R.string.onboarding_page_stats_title,
-                    R.string.onboarding_page_stats_description
+                    R.string.onboarding_page_stats_description,
                 ),
             )
         }
@@ -205,10 +205,11 @@ internal fun OnboardingScreen(
                         scope.launch {
                             pagerState.animateScrollToPage(
                                 page = nextPage,
-                                animationSpec = tween(
-                                    motion.durationLong,
-                                    easing = motion.emphasizedEasing
-                                ),
+                                animationSpec =
+                                    tween(
+                                        motion.durationLong,
+                                        easing = motion.emphasizedEasing,
+                                    ),
                             )
                         }
                     }

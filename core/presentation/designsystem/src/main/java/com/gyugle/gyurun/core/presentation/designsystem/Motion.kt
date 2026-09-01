@@ -30,12 +30,12 @@ data class Motion(
                 fadeIn(tween(durationShort, easing = standardEasing))
             } else {
                 fadeIn(tween(durationMedium, easing = standardEasing)) +
-                        slideInVertically(
-                            tween(
-                                durationMedium,
-                                easing = emphasizedEasing
-                            )
-                        ) { height -> height / 6 }
+                    slideInVertically(
+                        tween(
+                            durationMedium,
+                            easing = emphasizedEasing,
+                        ),
+                    ) { height -> height / 6 }
             }
 
     val contentExit: ExitTransition

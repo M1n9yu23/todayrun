@@ -63,7 +63,7 @@ class GyuRunApp :
                 detailsPresentationModule,
                 statsPresentationModule,
                 settingsPresentationModule,
-                appModule
+                appModule,
             )
         }
 
@@ -87,7 +87,7 @@ class GyuRunApp :
                 runsChanged = get<RunRepository>().getMostRecentRun(),
                 distanceUnit = get<UserSettingsRepository>().userSettings.map { it.distanceUnit },
                 applicationScope = applicationScope,
-                redrawWidget = { WeeklyStatsWidget().updateAll(this@GyuRunApp) }
+                redrawWidget = { WeeklyStatsWidget().updateAll(this@GyuRunApp) },
             ).start()
         }
     }

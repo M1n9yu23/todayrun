@@ -89,10 +89,11 @@ private fun MessageState(
     Column(
         modifier = modifier.padding(MaterialTheme.spacing.large),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(
-            MaterialTheme.spacing.medium,
-            Alignment.CenterVertically
-        ),
+        verticalArrangement =
+            Arrangement.spacedBy(
+                MaterialTheme.spacing.medium,
+                Alignment.CenterVertically,
+            ),
     ) {
         Icon(
             imageVector = icon,

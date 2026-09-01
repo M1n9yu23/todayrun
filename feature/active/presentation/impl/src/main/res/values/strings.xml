@@ -13,8 +13,8 @@
     <string name="active_run_saved">Run saved</string>
     <string name="active_run_retry">Retry</string>
     <string name="active_run_location_permission_title">Location needed</string>
-    <string name="active_run_location_rationale">Today Run records your route and pace from your location. Allow location access to start this run.</string>
-    <string name="active_run_location_settings">Location access is turned off. Turn it on in Settings to start a run.</string>
+    <string name="active_run_location_rationale">Today Run records your route and pace from your precise location — approximate location can\'t follow a run. Allow precise location to start this run.</string>
+    <string name="active_run_location_settings">Precise location is turned off. Turn it on in Settings to start a run.</string>
     <string name="active_run_enable">Enable</string>
     <string name="active_run_open_settings">Open settings</string>
     <string name="active_run_steps_permission_rationale">Grant physical activity access to count your steps while you run.</string>

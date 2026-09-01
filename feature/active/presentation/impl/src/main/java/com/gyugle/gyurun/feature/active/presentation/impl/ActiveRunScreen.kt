@@ -75,11 +75,11 @@ import com.gyugle.gyurun.core.presentation.designsystem.spacing
 import com.gyugle.gyurun.core.presentation.designsystem.statLarge
 import com.gyugle.gyurun.core.presentation.ui.LocalDistanceUnit
 import com.gyugle.gyurun.core.presentation.ui.ObserveAsEvents
-import com.gyugle.gyurun.core.presentation.ui.canTrackLocation
 import com.gyugle.gyurun.core.presentation.ui.formatDistance
 import com.gyugle.gyurun.core.presentation.ui.formatPace
 import com.gyugle.gyurun.core.presentation.ui.formatSteps
 import com.gyugle.gyurun.core.presentation.ui.hasActivityRecognitionPermission
+import com.gyugle.gyurun.core.presentation.ui.hasLocationPermission
 import com.gyugle.gyurun.core.presentation.ui.openAppSettings
 import com.gyugle.gyurun.core.presentation.ui.shouldShowActivityRecognitionPermissionRationale
 import com.gyugle.gyurun.core.presentation.ui.shouldShowLocationPermissionRationale
@@ -117,7 +117,7 @@ internal fun ActiveRunScreenRoot(
             contract = ActivityResultContracts.RequestMultiplePermissions(),
         ) { _ ->
             when {
-                context.canTrackLocation() -> {
+                context.hasLocationPermission() -> {
                     viewModel.onToggleRun(context.hasActivityRecognitionPermission())
                 }
 
@@ -208,7 +208,7 @@ internal fun ActiveRunScreenRoot(
 
     val onToggleRun: () -> Unit = {
         val willStartTracking = viewModel.state.runPhase != RunPhase.Tracking
-        if (willStartTracking && !context.canTrackLocation()) {
+        if (willStartTracking && !context.hasLocationPermission()) {
             locationPermissionLauncher.launch(locationPermissions)
         } else {
             viewModel.onToggleRun(context.hasActivityRecognitionPermission())
@@ -312,7 +312,7 @@ private fun ActiveRunScreen(
         val host = activity ?: return@LaunchedEffect
         when (state.runPhase) {
             RunPhase.Tracking, RunPhase.Paused -> {
-                if (!ActiveRunService.isServiceActive && context.canTrackLocation()) {
+                if (!ActiveRunService.isServiceActive && context.hasLocationPermission()) {
                     context.startService(
                         ActiveRunService.createStartIntent(context, host::class.java),
                     )
@@ -351,9 +351,12 @@ private fun ActiveRunScreen(
         containerColor = Color.Transparent,
         contentWindowInsets = WindowInsets(0, 0, 0, 0),
     ) { innerPadding ->
-        Box(modifier = Modifier
-            .fillMaxSize()
-            .padding(innerPadding)) {
+        Box(
+            modifier =
+                Modifier
+                    .fillMaxSize()
+                    .padding(innerPadding),
+        ) {
             MapView(
                 state = mapState,
                 modifier = Modifier.fillMaxSize(),
@@ -619,7 +622,7 @@ internal fun isSignalLost(
     runPhase: RunPhase,
 ): Boolean =
     !isLocationAvailable &&
-            (runPhase == RunPhase.Tracking || runPhase == RunPhase.Paused)
+        (runPhase == RunPhase.Tracking || runPhase == RunPhase.Paused)
 
 internal fun toggleButtonLabelRes(runPhase: RunPhase): Int =
     when (runPhase) {

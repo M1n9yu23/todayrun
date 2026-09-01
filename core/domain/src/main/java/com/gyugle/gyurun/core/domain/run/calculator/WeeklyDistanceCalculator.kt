@@ -30,8 +30,10 @@ object WeeklyDistanceCalculator {
     }
 
     private fun Run.weekStart(): LocalDate {
-        val localDate = dateTimeUtc.withZoneSameInstant(ZoneId.systemDefault())
-            .toLocalDate()
+        val localDate =
+            dateTimeUtc
+                .withZoneSameInstant(ZoneId.systemDefault())
+                .toLocalDate()
         return localDate.minusDays((localDate.dayOfWeek.value - 1).toLong())
     }
 }

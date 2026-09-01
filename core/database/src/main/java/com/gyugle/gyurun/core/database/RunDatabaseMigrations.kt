@@ -33,13 +33,13 @@ internal val MIGRATION_4_5 =
         override fun migrate(db: SupportSQLiteDatabase) {
             db.execSQL(
                 "CREATE TABLE IF NOT EXISTS `run_draft` (" +
-                        "`id` INTEGER NOT NULL, " +
-                        "`dateTimeUtc` TEXT NOT NULL, " +
-                        "`durationMillis` INTEGER NOT NULL, " +
-                        "`distanceMeters` INTEGER NOT NULL, " +
-                        "`route` TEXT, " +
-                        "`steps` INTEGER, " +
-                        "PRIMARY KEY(`id`))",
+                    "`id` INTEGER NOT NULL, " +
+                    "`dateTimeUtc` TEXT NOT NULL, " +
+                    "`durationMillis` INTEGER NOT NULL, " +
+                    "`distanceMeters` INTEGER NOT NULL, " +
+                    "`route` TEXT, " +
+                    "`steps` INTEGER, " +
+                    "PRIMARY KEY(`id`))",
             )
         }
     }

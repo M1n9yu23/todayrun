@@ -8,13 +8,14 @@ import kotlin.math.sqrt
 // 하버사인 공식 사용.
 data class Location(
     val lat: Double,
-    val long: Double
+    val long: Double,
 ) {
     fun distanceTo(other: Location): Float {
         val latDistance = Math.toRadians(other.lat - lat)
         val longDistance = Math.toRadians(other.long - long)
 
-        val a = sin(latDistance / 2) * sin(latDistance / 2) +
+        val a =
+            sin(latDistance / 2) * sin(latDistance / 2) +
                 cos(Math.toRadians(lat)) * cos(Math.toRadians(other.lat)) *
                 sin(longDistance / 2) * sin(longDistance / 2)
         val c = 2 * atan2(sqrt(a), sqrt(1 - a))

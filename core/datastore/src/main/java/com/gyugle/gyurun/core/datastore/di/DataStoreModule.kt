@@ -15,7 +15,7 @@ val dataStoreModule =
         single<DataStore<UserPreferences>> {
             DataStoreFactory.create(
                 serializer = UserPreferencesSerializer,
-                produceFile = { androidApplication().dataStoreFile("user_prefs.json") }
+                produceFile = { androidApplication().dataStoreFile("user_prefs.json") },
             )
         }
         single<UserSettingsRepository> { DataStoreUserSettingsRepository(get()) }

@@ -29,12 +29,12 @@ internal interface RunDao {
 
     @Query(
         "UPDATE run SET " +
-                "weatherType = :weatherType, " +
-                "weatherTemperatureCelsius = :temperatureCelsius, " +
-                "weatherFeelsLikeCelsius = :feelsLikeCelsius, " +
-                "weatherHumidityPercent = :humidityPercent, " +
-                "weatherWindSpeedKmh = :windSpeedKmh " +
-                "WHERE id = :id",
+            "weatherType = :weatherType, " +
+            "weatherTemperatureCelsius = :temperatureCelsius, " +
+            "weatherFeelsLikeCelsius = :feelsLikeCelsius, " +
+            "weatherHumidityPercent = :humidityPercent, " +
+            "weatherWindSpeedKmh = :windSpeedKmh " +
+            "WHERE id = :id",
     )
     suspend fun updateWeather(
         id: String,

@@ -18,7 +18,7 @@ data class Run(
     val route: List<List<LocationTimestamp>> = emptyList(),
     val mapPicturePath: String? = null,
     val weather: Weather? = null,
-    val steps: Int? = null
+    val steps: Int? = null,
 ) {
     val avgSpeedKmh: Double
         get() = (distanceMeters / 1000.0) / duration.toDouble(DurationUnit.HOURS)

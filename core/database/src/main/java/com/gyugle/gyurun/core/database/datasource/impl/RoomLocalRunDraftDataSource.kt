@@ -11,7 +11,7 @@ import com.gyugle.gyurun.core.database.mapper.toRunDraftEntity
 import com.gyugle.gyurun.core.domain.run.RunDraft
 
 internal class RoomLocalRunDraftDataSource(
-    private val runDraftDao: RunDraftDao
+    private val runDraftDao: RunDraftDao,
 ) : LocalRunDraftDataSource {
     override suspend fun getDraft(): RunDraft? = runDraftDao.getDraft()?.toRunDraft()
 

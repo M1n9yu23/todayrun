@@ -57,9 +57,14 @@ suspend inline fun <reified T> responseToResult(response: HttpResponse): Result<
         else -> Result.Error(DataError.Network.UNKNOWN)
     }
 
-fun constructRoute(route: String): String =
-    when {
-        route.contains(BuildConfig.BASE_URL) -> route
-        route.startsWith("/") -> BuildConfig.BASE_URL + route
-        else -> BuildConfig.BASE_URL + "/$route"
+fun constructRoute(route: String): String {
+    val baseUrl = BuildConfig.BASE_URL
+    check(baseUrl.isNotBlank()) {
+        "BASE_URL 이 비어 있다 — local.properties 에 BASE_URL 을 적어야 한다"
     }
+    return when {
+        route.startsWith(baseUrl) -> route
+        route.startsWith("/") -> baseUrl + route
+        else -> "$baseUrl/$route"
+    }
+}

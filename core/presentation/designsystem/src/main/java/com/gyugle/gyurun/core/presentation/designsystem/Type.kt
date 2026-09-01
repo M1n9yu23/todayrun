@@ -19,68 +19,82 @@ private val baseline = Typography()
 
 val Typography =
     Typography(
-        displayLarge = baseline.displayLarge.copy(
-            fontFamily = PretendardFontFamily,
-            fontWeight = FontWeight.Bold
-        ),
-        displayMedium = baseline.displayMedium.copy(
-            fontFamily = PretendardFontFamily,
-            fontWeight = FontWeight.Bold
-        ),
-        displaySmall = baseline.displaySmall.copy(
-            fontFamily = PretendardFontFamily,
-            fontWeight = FontWeight.Bold
-        ),
-        headlineLarge = baseline.headlineLarge.copy(
-            fontFamily = PretendardFontFamily,
-            fontWeight = FontWeight.SemiBold
-        ),
-        headlineMedium = baseline.headlineMedium.copy(
-            fontFamily = PretendardFontFamily,
-            fontWeight = FontWeight.SemiBold
-        ),
-        headlineSmall = baseline.headlineSmall.copy(
-            fontFamily = PretendardFontFamily,
-            fontWeight = FontWeight.SemiBold
-        ),
-        titleLarge = baseline.titleLarge.copy(
-            fontFamily = PretendardFontFamily,
-            fontWeight = FontWeight.SemiBold
-        ),
-        titleMedium = baseline.titleMedium.copy(
-            fontFamily = PretendardFontFamily,
-            letterSpacing = 0.sp
-        ),
-        titleSmall = baseline.titleSmall.copy(
-            fontFamily = PretendardFontFamily,
-            letterSpacing = 0.sp
-        ),
-        bodyLarge = baseline.bodyLarge.copy(
-            fontFamily = PretendardFontFamily,
-            letterSpacing = 0.sp
-        ),
-        bodyMedium = baseline.bodyMedium.copy(
-            fontFamily = PretendardFontFamily,
-            letterSpacing = 0.sp
-        ),
-        bodySmall = baseline.bodySmall.copy(
-            fontFamily = PretendardFontFamily,
-            letterSpacing = 0.sp
-        ),
+        displayLarge =
+            baseline.displayLarge.copy(
+                fontFamily = PretendardFontFamily,
+                fontWeight = FontWeight.Bold,
+            ),
+        displayMedium =
+            baseline.displayMedium.copy(
+                fontFamily = PretendardFontFamily,
+                fontWeight = FontWeight.Bold,
+            ),
+        displaySmall =
+            baseline.displaySmall.copy(
+                fontFamily = PretendardFontFamily,
+                fontWeight = FontWeight.Bold,
+            ),
+        headlineLarge =
+            baseline.headlineLarge.copy(
+                fontFamily = PretendardFontFamily,
+                fontWeight = FontWeight.SemiBold,
+            ),
+        headlineMedium =
+            baseline.headlineMedium.copy(
+                fontFamily = PretendardFontFamily,
+                fontWeight = FontWeight.SemiBold,
+            ),
+        headlineSmall =
+            baseline.headlineSmall.copy(
+                fontFamily = PretendardFontFamily,
+                fontWeight = FontWeight.SemiBold,
+            ),
+        titleLarge =
+            baseline.titleLarge.copy(
+                fontFamily = PretendardFontFamily,
+                fontWeight = FontWeight.SemiBold,
+            ),
+        titleMedium =
+            baseline.titleMedium.copy(
+                fontFamily = PretendardFontFamily,
+                letterSpacing = 0.sp,
+            ),
+        titleSmall =
+            baseline.titleSmall.copy(
+                fontFamily = PretendardFontFamily,
+                letterSpacing = 0.sp,
+            ),
+        bodyLarge =
+            baseline.bodyLarge.copy(
+                fontFamily = PretendardFontFamily,
+                letterSpacing = 0.sp,
+            ),
+        bodyMedium =
+            baseline.bodyMedium.copy(
+                fontFamily = PretendardFontFamily,
+                letterSpacing = 0.sp,
+            ),
+        bodySmall =
+            baseline.bodySmall.copy(
+                fontFamily = PretendardFontFamily,
+                letterSpacing = 0.sp,
+            ),
         labelLarge =
             baseline.labelLarge.copy(
                 fontFamily = PretendardFontFamily,
                 fontWeight = FontWeight.SemiBold,
                 letterSpacing = 0.sp,
             ),
-        labelMedium = baseline.labelMedium.copy(
-            fontFamily = PretendardFontFamily,
-            letterSpacing = 0.sp
-        ),
-        labelSmall = baseline.labelSmall.copy(
-            fontFamily = PretendardFontFamily,
-            letterSpacing = 0.sp
-        ),
+        labelMedium =
+            baseline.labelMedium.copy(
+                fontFamily = PretendardFontFamily,
+                letterSpacing = 0.sp,
+            ),
+        labelSmall =
+            baseline.labelSmall.copy(
+                fontFamily = PretendardFontFamily,
+                letterSpacing = 0.sp,
+            ),
     )
 
 val Typography.statLarge: TextStyle

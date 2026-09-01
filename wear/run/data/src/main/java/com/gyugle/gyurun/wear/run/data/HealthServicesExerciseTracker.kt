@@ -222,7 +222,7 @@ internal class HealthServicesExerciseTracker(
         val permission = heartRatePermissionFor(Build.VERSION.SDK_INT)
         return ContextCompat.checkSelfPermission(
             context,
-            permission
+            permission,
         ) == PackageManager.PERMISSION_GRANTED
     }
 }

@@ -11,8 +11,7 @@ internal class DefaultRunDraftRepository(
 ) : RunDraftRepository {
     override suspend fun getDraft(): RunDraft? = localRunDraftDataSource.getDraft()
 
-    override suspend fun upsertDraft(draft: RunDraft): EmptyResult<DataError.Local> =
-        localRunDraftDataSource.upsertDraft(draft)
+    override suspend fun upsertDraft(draft: RunDraft): EmptyResult<DataError.Local> = localRunDraftDataSource.upsertDraft(draft)
 
     override suspend fun deleteDraft() {
         localRunDraftDataSource.deleteDraft()

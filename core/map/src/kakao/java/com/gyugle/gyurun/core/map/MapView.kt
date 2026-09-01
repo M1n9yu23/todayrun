@@ -227,7 +227,8 @@ private fun currentLocationMarker(
         center,
         center,
         center,
-        Paint(Paint.ANTI_ALIAS_FLAG).apply { color = ringColor })
+        Paint(Paint.ANTI_ALIAS_FLAG).apply { color = ringColor },
+    )
     canvas.drawCircle(
         center,
         center,

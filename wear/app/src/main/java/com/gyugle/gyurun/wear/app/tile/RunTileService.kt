@@ -28,11 +28,9 @@ private const val RESOURCES_VERSION = "1"
 
 private val GyuRunTileColors = tileColorScheme(WearColorScheme)
 
-internal fun tileStatusRes(isRunning: Boolean): Int =
-    if (isRunning) R.string.wear_tile_status_running else R.string.wear_tile_status_ready
+internal fun tileStatusRes(isRunning: Boolean): Int = if (isRunning) R.string.wear_tile_status_running else R.string.wear_tile_status_ready
 
-internal fun tileButtonRes(isRunning: Boolean): Int =
-    if (isRunning) R.string.wear_tile_open else R.string.wear_tile_start
+internal fun tileButtonRes(isRunning: Boolean): Int = if (isRunning) R.string.wear_tile_open else R.string.wear_tile_start
 
 class RunTileService :
     TileService(),

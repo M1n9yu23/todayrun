@@ -1,7 +1,7 @@
 package com.gyugle.gyurun.core.common
 
 sealed interface DataError : Error {
-    enum class Network: DataError {
+    enum class Network : DataError {
         NO_INTERNET,
         REQUEST_TIMEOUT,
         UNAUTHORIZED,
@@ -14,6 +14,6 @@ sealed interface DataError : Error {
     }
 
     enum class Local : DataError {
-        DISK_FULL
+        DISK_FULL,
     }
 }

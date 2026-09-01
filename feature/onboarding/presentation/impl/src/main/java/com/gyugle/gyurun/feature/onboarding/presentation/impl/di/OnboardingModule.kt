@@ -18,7 +18,7 @@ val onboardingPresentationModule =
                     applicationScope.launch {
                         userSettingsRepository.setHasCompletedOnboarding(true)
                     }
-                }
+                },
             )
         }
     }

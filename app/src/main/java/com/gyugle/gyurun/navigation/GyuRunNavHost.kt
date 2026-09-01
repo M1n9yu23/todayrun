@@ -16,7 +16,7 @@ import org.koin.compose.navigation3.koinEntryProvider
 @Composable
 fun GyuRunNavHost(
     hasCompletedOnboarding: Boolean,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     if (hasCompletedOnboarding) {
         FeatureNavHost(startKey = OverviewNavKey, modifier = modifier)

@@ -5,5 +5,5 @@ data class Weather(
     val feelsLikeCelsius: Double,
     val humidityPercent: Int,
     val windSpeedKmh: Double,
-    val type: WeatherType
+    val type: WeatherType,
 )

@@ -20,5 +20,4 @@ dependencies {
     implementation(project(":run:location"))
     implementation(libs.androidx.activity.compose)
     implementation(libs.kotlinx.coroutines.core)
-
 }

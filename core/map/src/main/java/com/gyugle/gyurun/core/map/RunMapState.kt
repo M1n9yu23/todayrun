@@ -6,5 +6,5 @@ import com.gyugle.gyurun.core.domain.location.Location
 @Immutable
 data class RunMapState(
     val currentLocation: Location? = null,
-    val locations: List<List<Location>> = emptyList()
+    val locations: List<List<Location>> = emptyList(),
 )

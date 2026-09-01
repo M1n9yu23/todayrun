@@ -17,4 +17,5 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.paging.common)
     implementation(libs.room.paging)
+    implementation(libs.timber)
 }

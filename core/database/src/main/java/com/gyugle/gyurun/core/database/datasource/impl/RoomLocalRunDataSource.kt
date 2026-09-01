@@ -22,7 +22,7 @@ import java.time.ZonedDateTime
 private const val RUNS_PAGE_SIZE = 20
 
 internal class RoomLocalRunDataSource(
-    private val runDao: RunDao
+    private val runDao: RunDao,
 ) : LocalRunDataSource {
     override fun getRuns(): Flow<List<Run>> =
         runDao.getRuns().map { runEntities ->
@@ -55,7 +55,7 @@ internal class RoomLocalRunDataSource(
 
     override suspend fun upsertRun(
         run: Run,
-        mapPicturePath: String?
+        mapPicturePath: String?,
     ): Result<RunId, DataError.Local> =
         try {
             val entity = run.toRunEntity(mapPicturePath)
@@ -67,7 +67,7 @@ internal class RoomLocalRunDataSource(
 
     override suspend fun updateWeather(
         id: RunId,
-        weather: Weather
+        weather: Weather,
     ): EmptyResult<DataError.Local> =
         try {
             runDao.updateWeather(

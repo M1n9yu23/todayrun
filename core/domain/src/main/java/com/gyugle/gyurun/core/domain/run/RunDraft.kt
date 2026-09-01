@@ -9,5 +9,5 @@ data class RunDraft(
     val duration: Duration,
     val distanceMeters: Int,
     val route: List<List<LocationTimestamp>> = emptyList(),
-    val steps: Int? = null
+    val steps: Int? = null,
 )

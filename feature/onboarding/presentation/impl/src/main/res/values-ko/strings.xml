@@ -9,8 +9,8 @@
     <string name="onboarding_next">다음</string>
     <string name="onboarding_get_started">시작하기</string>
     <string name="permission_location_title">위치 권한이 필요해요</string>
-    <string name="permission_location_rationale">"오늘도런"은 위치를 이용해 지도 위에 러닝 경로를 그립니다. 러닝을 기록하려면 위치 접근을 허용해 주세요.</string>
-    <string name="permission_location_settings">위치 권한이 꺼져 있습니다. 설정에서 "오늘도런"의 위치를 허용해 주세요.</string>
+    <string name="permission_location_rationale">"오늘도런"은 정확한 위치로 지도 위에 러닝 경로를 그립니다. 대략적인 위치로는 달리는 길을 따라갈 수 없어요. 정확한 위치를 허용해 주세요.</string>
+    <string name="permission_location_settings">정확한 위치가 꺼져 있습니다. 설정에서 "오늘도런"의 위치를 \'정확한 위치\'로 허용해 주세요.</string>
     <string name="permission_try_again">다시 시도</string>
     <string name="permission_open_settings">설정 열기</string>
 </resources>

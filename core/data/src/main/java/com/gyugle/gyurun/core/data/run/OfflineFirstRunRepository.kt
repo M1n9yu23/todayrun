@@ -24,8 +24,7 @@ internal class OfflineFirstRunRepository(
 ) : RunRepository {
     override fun getRuns(): Flow<List<Run>> = localRunDataSource.getRuns()
 
-    override fun getRunsSince(sinceUtc: ZonedDateTime): Flow<List<Run>> =
-        localRunDataSource.getRunsSince(sinceUtc)
+    override fun getRunsSince(sinceUtc: ZonedDateTime): Flow<List<Run>> = localRunDataSource.getRunsSince(sinceUtc)
 
     override fun getMostRecentRun(): Flow<Run?> = localRunDataSource.getMostRecentRun()
 

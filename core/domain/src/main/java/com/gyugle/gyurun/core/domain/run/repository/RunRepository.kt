@@ -38,5 +38,4 @@ interface RunRepository {
     suspend fun restoreRun(run: Run): EmptyResult<DataError.Local>
 
     suspend fun finalizeRunDeletion(run: Run)
-
 }

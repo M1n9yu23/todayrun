@@ -9,7 +9,7 @@ import com.gyugle.gyurun.core.database.entity.RunEntity
 
 @Database(
     entities = [RunEntity::class, RunDraftEntity::class],
-    version = 5
+    version = 5,
 )
 internal abstract class RunDatabase : RoomDatabase() {
     abstract val runDao: RunDao

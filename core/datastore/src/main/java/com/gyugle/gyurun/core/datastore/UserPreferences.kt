@@ -10,5 +10,5 @@ internal data class UserPreferences(
     val themeMode: String = ThemeMode.SYSTEM.name,
     val hasCompletedOnboarding: Boolean = false,
     val hasRequestedStepsPermission: Boolean = false,
-    val hasRequestedNotificationPermission: Boolean = false
+    val hasRequestedNotificationPermission: Boolean = false,
 )

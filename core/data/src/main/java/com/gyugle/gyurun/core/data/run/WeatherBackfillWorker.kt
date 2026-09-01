@@ -64,7 +64,7 @@ internal fun DataError.Network.toWorkerResult(): ListenableWorker.Result =
         DataError.Network.REQUEST_TIMEOUT,
         DataError.Network.SERVER_ERROR,
         DataError.Network.TOO_MANY_REQUESTS,
-            -> ListenableWorker.Result.retry()
+        -> ListenableWorker.Result.retry()
 
         else -> ListenableWorker.Result.failure()
     }

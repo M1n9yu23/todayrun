@@ -24,7 +24,7 @@ fun <T> GyuRunSegmentedButton(
     selectedOption: T,
     onOptionSelect: (T) -> Unit,
     optionLabel: (T) -> String,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     SingleChoiceSegmentedButtonRow(modifier = modifier) {
         options.forEachIndexed { index, option ->

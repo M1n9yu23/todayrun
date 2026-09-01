@@ -27,7 +27,7 @@ import com.gyugle.gyurun.core.presentation.designsystem.spacing
 @Composable
 fun GyuRunSkeleton(
     modifier: Modifier = Modifier,
-    shape: Shape = MaterialTheme.shapes.small
+    shape: Shape = MaterialTheme.shapes.small,
 ) {
     val transition = rememberInfiniteTransition(label = "skeleton")
     val alpha by transition.animateFloat(

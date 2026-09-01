@@ -371,11 +371,12 @@ private fun TrackerScreenNotConnectedPreview() {
 private fun TrackerScreenNotTrackablePreview() {
     WearGyuRunTheme {
         TrackerScreen(
-            state = runningState.copy(
-                isTrackable = false,
-                isRunActive = false,
-                hasStartedRunning = false
-            ),
+            state =
+                runningState.copy(
+                    isTrackable = false,
+                    isRunActive = false,
+                    hasStartedRunning = false,
+                ),
             onAction = {},
         )
     }

@@ -15,7 +15,7 @@ import com.gyugle.gyurun.core.presentation.designsystem.spacing
 @Composable
 fun GyuRunCard(
     modifier: Modifier = Modifier,
-    content: @Composable () -> Unit
+    content: @Composable () -> Unit,
 ) {
     Surface(
         modifier = modifier,

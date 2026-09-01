@@ -38,6 +38,5 @@ internal class WatchToPhoneConnector(
                 }
             }.shareIn(applicationScope, SharingStarted.Eagerly)
 
-    override suspend fun sendActionToPhone(action: MessagingAction): EmptyResult<MessagingError> =
-        messagingClient.sendOrQueueAction(action)
+    override suspend fun sendActionToPhone(action: MessagingAction): EmptyResult<MessagingError> = messagingClient.sendOrQueueAction(action)
 }

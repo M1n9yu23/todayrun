@@ -9,8 +9,8 @@
     <string name="onboarding_next">Next</string>
     <string name="onboarding_get_started">Get started</string>
     <string name="permission_location_title">Location permission needed</string>
-    <string name="permission_location_rationale">TodayRun traces your run on the map using your location. Allow location access to start tracking your runs.</string>
-    <string name="permission_location_settings">Location permission is turned off. Open Settings and allow location for TodayRun to track your runs.</string>
+    <string name="permission_location_rationale">TodayRun draws your route from your precise location — approximate location can\'t follow a run. Allow precise location to start tracking your runs.</string>
+    <string name="permission_location_settings">Precise location is turned off. Open Settings and allow precise location for TodayRun to track your runs.</string>
     <string name="permission_try_again">Try again</string>
     <string name="permission_open_settings">Open Settings</string>
 </resources>

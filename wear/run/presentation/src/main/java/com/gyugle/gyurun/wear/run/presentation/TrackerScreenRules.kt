@@ -2,8 +2,7 @@ package com.gyugle.gyurun.wear.run.presentation
 
 import android.os.Build
 
-internal fun canFinishRun(state: TrackerState): Boolean =
-    state.hasStartedRunning && (!state.isRunActive || !state.isTrackable)
+internal fun canFinishRun(state: TrackerState): Boolean = state.hasStartedRunning && (!state.isRunActive || !state.isTrackable)
 
 internal fun heartRateValueRes(state: TrackerState): Int? =
     when {
