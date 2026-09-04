@@ -18,14 +18,18 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.luminance
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.model.JointType
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.LatLngBounds
+import com.google.android.gms.maps.model.MapStyleOptions
 import com.google.maps.android.compose.GoogleMap
 import com.google.maps.android.compose.MapEffect
+import com.google.maps.android.compose.MapProperties
 import com.google.maps.android.compose.MapUiSettings
 import com.google.maps.android.compose.MapsComposeExperimentalApi
 import com.google.maps.android.compose.MarkerComposable
@@ -33,8 +37,9 @@ import com.google.maps.android.compose.Polyline
 import com.google.maps.android.compose.rememberCameraPositionState
 import com.google.maps.android.compose.rememberUpdatedMarkerState
 
-private const val LIVE_TRACKING_ZOOM = 17f
+private const val LIVE_TRACKING_ZOOM = 18f
 private const val ROUTE_BOUNDS_PADDING = 100
+private const val DARK_SURFACE_LUMINANCE = 0.5f
 
 private val LocationMarkerSize = 26.dp
 private val LocationMarkerCoreSize = 16.dp
@@ -46,6 +51,7 @@ fun MapView(
     modifier: Modifier = Modifier,
 ) {
     val cameraPositionState = rememberCameraPositionState()
+    val mapProperties = rememberMapProperties()
 
     val currentLocation = state.currentLocation
     LaunchedEffect(currentLocation) {
@@ -62,6 +68,7 @@ fun MapView(
     GoogleMap(
         modifier = modifier,
         cameraPositionState = cameraPositionState,
+        properties = mapProperties,
         uiSettings = remember { MapUiSettings(zoomControlsEnabled = false) },
     ) {
         state.locations.forEach { segment ->
@@ -98,6 +105,18 @@ fun MapView(
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun rememberMapProperties(): MapProperties {
+    val context = LocalContext.current
+    val isDark = MaterialTheme.colorScheme.surface.luminance() < DARK_SURFACE_LUMINANCE
+    return remember(context, isDark) {
+        val styleRes = if (isDark) R.raw.map_style_dark else R.raw.map_style_light
+        MapProperties(
+            mapStyleOptions = MapStyleOptions.loadRawResourceStyle(context, styleRes),
+        )
     }
 }
 
