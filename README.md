@@ -4,9 +4,9 @@
 
 ## 화면
 
-| 러닝 히스토리 | 실시간 추적 | 러닝 상세 | 통계 |
-|---|---|---|---|
-| <img src="assets/history.png" width="200"/> | <img src="assets/active.png" width="200"/> | <img src="assets/detail.png" width="200"/> | <img src="assets/stats.png" width="200"/> |
+| 러닝 히스토리 | 실시간 추적 | 러닝 상세 | 통계 | 홈 화면 위젯 |
+|---|---|---|---|---|
+| <img src="assets/history.png" width="160"/> | <img src="assets/active.png" width="160"/> | <img src="assets/detail.png" width="160"/> | <img src="assets/stats.png" width="160"/> | <img src="assets/widget.png" width="160"/> |
 
 | 워치 지표 | 워치 조작 |
 |---|---|
