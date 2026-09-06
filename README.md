@@ -4,15 +4,13 @@
 
 ## 화면
 
-정리해서 올릴 예정입니다.
+| 러닝 히스토리 | 실시간 추적 | 러닝 상세 | 통계 |
+|---|---|---|---|
+| <img src="assets/history.png" width="200"/> | <img src="assets/active.png" width="200"/> | <img src="assets/detail.png" width="200"/> | <img src="assets/stats.png" width="200"/> |
 
-<!--
-캡처와 영상은 assets/ 에 넣고 아래 주석을 풀면 됩니다.
-
-| 러닝 히스토리 | 실시간 추적 | 상세 | 통계 | 워치 |
-|---|---|---|---|---|
-| <img src="assets/overview.png" width="180"/> | <img src="assets/active.png" width="180"/> | <img src="assets/details.png" width="180"/> | <img src="assets/stats.png" width="180"/> | <img src="assets/wear.png" width="180"/> |
--->
+| 워치 지표 | 워치 조작 |
+|---|---|
+| <img src="assets/wear-metrics.png" width="200"/> | <img src="assets/wear-controls.png" width="200"/> |
 
 ## 기능
 
